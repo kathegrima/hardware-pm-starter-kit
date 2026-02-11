@@ -453,8 +453,7 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 
 | Compliance | Applies To | Mandatory? | Timeline | Cost |
 |-----------|-----------|------------|----------|------|
-| **CE Marking** | All hardware products sold in EU | ✅ Yes | 3-6 months | €10K-€50K |
-| **RoHS** | Electronics with > 4 specific substances | ✅ Yes | 1-2 months | €5K-€15K |
+| **CE Marking** | All hardware products sold in EU | ✅ Yes | 3-6 months | €5K-€50K || **RoHS** | Electronics with > 4 specific substances | ✅ Yes | 1-2 months | €5K-€15K |
 | **REACH** | Products with chemicals > 0.1% threshold | ✅ Yes | 2-4 months | €10K-€30K |
 | **WEEE** | Electrical/electronic equipment | ✅ Yes | 1-2 months | €5K-€10K |
 | **RED** | Radio/wireless devices | ✅ If wireless | 4-8 months | €20K-€60K |
@@ -736,7 +735,7 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 
 Found an industry we missed? Have better customization guidance?
 
-- **GitHub Issues**: [Suggest improvements](https://github.com/[username]/hardware-pm-starter-kit/issues)
+- **GitHub Issues**: [Suggest improvements](https://github.com/kathegrima/hardware-pm-starter-kit/issues)
 - **Discussions**: [Share your industry-specific insights](https://github.com/[username]/hardware-pm-starter-kit/discussions)
 - **Pull Requests**: Contribute industry guides!
 
