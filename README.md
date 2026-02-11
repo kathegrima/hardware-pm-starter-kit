@@ -78,7 +78,7 @@ This starter kit is designed for:
 
 ```bash
 # Clone the repository
-git clone https://github.com/[username]/hardware-pm-starter-kit.git
+git clone https://github.com/kathegrima/hardware-pm-starter-kit.git
 
 # Navigate to templates
 cd hardware-pm-starter-kit/templates
