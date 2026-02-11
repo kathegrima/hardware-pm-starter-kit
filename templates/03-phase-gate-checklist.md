@@ -32,12 +32,12 @@ Concept → EVT → DVT → PVT → Production Launch
   Gate0   Gate1  Gate2  Gate3    Gate4
 ```
 
-| Phase | Purpose | Typical Quantities | Key Focus |
-|-------|---------|-------------------|-----------|
+|| Phase | Purpose | Typical Quantities | Key Focus |
+|-------|---------|-------------------|--------------|
 | **Concept** | Validate feasibility | Proof-of-concept | Requirements, risks, business case |
-| **EVT** | Prove design works | 100-1,000 units | Functionality, performance, first integration |
-| **DVT** | Lock design | 300-2,000 units | Reliability, compliance, manufacturability |
-| **PVT** | Validate production | 1K-20K units | Yield, quality, production speed |
+| **EVT** | Prove design works | 10-50 units | Functionality, performance, first integration |
+| **DVT** | Lock design | 50-200 units | Reliability, compliance, manufacturability |
+| **PVT** | Validate production | 200-1,000 units | Yield, quality, production speed |
 | **Production** | Mass manufacturing | Volume shipments | Scale, cost, continuous improvement |
 
 ---
@@ -302,7 +302,11 @@ Concept → EVT → DVT → PVT → Production Launch
 > Must demonstrate consistent quality at production speeds
 
 **Critical:**
-- ✅ Production yield >95% functional, >90% cosmetic (or defined target)
+- ✅ **Production yield targets met**:
+  - First PVT run: **>70% acceptable** (with root cause analysis)
+  - Second PVT run: **>85% required**
+  - Pre-launch: **>92% required**
+  - Volume production: **>95% functional, >90% cosmetic**
 - ✅ Line speed meets target - no bottlenecks preventing volume shipment
 - ✅ All regulatory certifications obtained and marked on product
 - ✅ Supply chain capable of supporting 3 months of forecasted demand
@@ -464,7 +468,7 @@ Concept → EVT → DVT → PVT → Production Launch
 
 **Document Version**: 1.0  
 **Template**: hardware-pm-starter-kit v1.0  
-**Last Updated**: `[DATE]`
+**Last Updated**: `08/02/2026`
 
 ---
 
