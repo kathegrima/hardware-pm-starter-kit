@@ -693,7 +693,11 @@ Change      │ ████████████
 **Go/No-Go Decision**: Are we ready to launch and scale to volume production?
 
 **Manufacturing Readiness**:
-- [ ] **Yield target met** - first-pass yield 85-95% for pilot run (>95% required at volume production)
+- [ ] **Yield targets met**:
+  - First PVT run: **>70% acceptable** (all failures root-caused)
+  - Second PVT run: **>85% required**
+  - Pre-launch run: **>92% required**
+  - Volume production: **>95%**
 - [ ] **Cycle time acceptable** - meets production throughput requirements
 - [ ] **Cost target achieved** - actual COGS within 5% of target
 - [ ] **Test coverage validated** - functional test catches >95% of defects
