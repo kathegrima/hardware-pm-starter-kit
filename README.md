@@ -281,9 +281,9 @@ We welcome contributions! This toolkit improves when hardware PMs share their ex
 
 ### How to Contribute
 
-1. **Report Issues**: Found a template that doesn't work? [Open an issue](https://github.com/[username]/hardware-pm-starter-kit/issues)
-2. **Suggest Improvements**: Have ideas for new templates or guides? [Start a discussion](https://github.com/[username]/hardware-pm-starter-kit/discussions)
-3. **Submit Templates**: Created a template for a specific industry? [Submit a pull request](https://github.com/[username]/hardware-pm-starter-kit/pulls)
+1. **Report Issues**: Found a template that doesn't work? [Open an issue](https://github.com/kathegrima/hardware-pm-starter-kit/issues)
+2. **Suggest Improvements**: Have ideas for new templates or guides? [Start a discussion](https://github.com/kathegrima/hardware-pm-starter-kit/discussions)
+3. **Submit Templates**: Created a template for a specific industry? [Submit a pull request](https://github.com/kathegrima/hardware-pm-starter-kit/pulls)
 4. **Share Lessons Learned**: Write a case study or blog post about using these templates
 
 **Contribution Guidelines**: See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions.
@@ -315,9 +315,9 @@ This toolkit was created by synthesizing best practices from:
 
 ## 📞 Support & Community
 
-- **GitHub Issues**: [Report bugs or request features](https://github.com/[username]/hardware-pm-starter-kit/issues)
-- **Discussions**: [Ask questions, share experiences](https://github.com/[username]/hardware-pm-starter-kit/discussions)
-- **Contributing**: [Submit improvements](https://github.com/[username]/hardware-pm-starter-kit/pulls)
+- **GitHub Issues**: [Report bugs or request features](https://github.com/kathegrima/hardware-pm-starter-kit/issues)
+- **Discussions**: [Ask questions, share experiences](https://github.com/kathegrima/hardware-pm-starter-kit/discussions)
+- **Contributing**: [Submit improvements](https://github.com/kathegrima/hardware-pm-starter-kit/pulls)
 
 ---
 
@@ -336,7 +336,7 @@ This toolkit was created by synthesizing best practices from:
 - [ ] Integration guides for tools (Jira, Asana, Monday.com)
 - [ ] Case studies from real hardware projects
 
-**Want to contribute to the roadmap?** [Join the discussion](https://github.com/[username]/hardware-pm-starter-kit/discussions)
+**Want to contribute to the roadmap?** [Join the discussion](https://github.com/kathegrima/hardware-pm-starter-kit/discussions)
 
 ---
 
@@ -362,7 +362,7 @@ This toolkit was created by synthesizing best practices from:
 
 If you find this toolkit useful, **please star this repository** to help others discover it!
 
-[![GitHub stars](https://img.shields.io/github/stars/[username]/hardware-pm-starter-kit?style=social)](https://github.com/[username]/hardware-pm-starter-kit)
+[![GitHub stars](https://img.shields.io/github/stars/kathegrima/hardware-pm-starter-kit?style=social)](https://github.com/kathegrima/hardware-pm-starter-kit)
 
 ---
 
@@ -395,4 +395,4 @@ If you find this toolkit useful, **please star this repository** to help others 
 
 ---
 
-**Have questions?** [Open an issue](https://github.com/[username]/hardware-pm-starter-kit/issues) or [start a discussion](https://github.com/[username]/hardware-pm-starter-kit/discussions).
+**Have questions?** [Open an issue](https://github.com/kathegrima/hardware-pm-starter-kit/issues) or [start a discussion](https://github.com/kathegrima/hardware-pm-starter-kit/discussions).
