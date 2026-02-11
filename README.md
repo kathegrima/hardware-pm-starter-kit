@@ -51,7 +51,7 @@ This starter kit is designed for:
 **Planning & Tracking:**
 - **[Product Requirements Document (PRD)](templates/06-prd-template.md)** - Technical and functional requirements
 - **[Bill of Materials (BOM) Template](templates/07-bom-template.md)** - Component tracking with costs and lead times
-- **[Compliance Checklist](templates/08-compliance-checklist.md)** - CE, FCC, RoHS, FDA, ISO standards
+- **[Compliance Checklist](templates/08-compliance-checklist.md)** | EU: CE, RoHS, REACH, WEEE, RED, MDR |
 - **[Test Plan Template](templates/09-test-plan-template.md)** - Functional, reliability, and environmental testing
 - **[Change Request Form](templates/10-change-request-form.md)** - Formal change control process
 
@@ -179,13 +179,14 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 **If you're developing hardware in Italy or for the European market**, compliance is mandatory. Key regulations:
 
 | Requirement | Applies To | Timeline | Cost (Estimate) |
-|-------------|-----------|----------|-----------------|
+|-------------|-----------|----------|--------------------|
 | **CE Marking** | All hardware products sold in EU | 3-6 months | €10K-€50K |
-| **RoHS** | Electronics with restricted substances | 1-2 months | €5K-€15K |
-| **REACH** | Products with chemicals > 0.1% | 2-4 months | €10K-€30K |
-| **WEEE** | Electrical/electronic equipment | 1-2 months | €5K-€10K |
+| **RoHS** | Electronics with restricted substances | 1-2 months | €1K-€5K |
+| **REACH** | Products with chemicals > 0.1% | 2-4 months | €5K-€15K |
+| **WEEE/RAEE** | Electrical/electronic equipment | 1-2 months | €1K-€3K |
 | **RED** | Radio/wireless devices | 4-8 months | €20K-€60K |
 | **MDR** | Medical devices | 12-24 months | €100K-€500K+ |
+
 
 **Learn more**: Read the **[Compliance Guide for EU/Italy](guides/05-compliance-guide-eu.md)** for detailed requirements, testing labs, Notified Bodies, and pre-compliance strategies.
 
@@ -248,7 +249,10 @@ Hardware PM must account for **long lead times**:
 
 ## 📊 Example Project Timeline
 
-**Consumer Electronics Smartwatch** (8-month timeline):
+**Consumer Electronics Smartwatch** (10-12 month timeline):
+
+*Note: This is an optimized timeline for experienced teams with established supply chains. 
+First-time hardware projects typically take 18-24 months.*
 
 ```
 Month 1-2: Concept Phase
@@ -286,7 +290,7 @@ We welcome contributions! This toolkit improves when hardware PMs share their ex
 3. **Submit Templates**: Created a template for a specific industry? [Submit a pull request](https://github.com/kathegrima/hardware-pm-starter-kit/pulls)
 4. **Share Lessons Learned**: Write a case study or blog post about using these templates
 
-**Contribution Guidelines**: See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions.
+**Want to contribute?** [Open an issue](https://github.com/kathegrima/hardware-pm-starter-kit/issues) or [submit a pull request](https://github.com/kathegrima/hardware-pm-starter-kit/pulls)
 
 ---
 
@@ -302,14 +306,11 @@ This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file
 
 This toolkit was created by synthesizing best practices from:
 - Industry-standard frameworks (NPI, APQP, ISO standards)
+- Public best practices from hardware companies (Google, Apple, Tesla methodologies publicly documented)
 - Hardware PM practitioners across consumer electronics, medical, IoT, and industrial sectors
 - Open-source project management communities
 - Academic research on hardware product development
-
-**Special thanks to**:
-- Hardware PM practitioners who shared their templates and lessons learned
-- Companies using phase-gate methodologies in the real world
-- The open-source community for inspiration and feedback
+- European compliance regulations (EU directives, Notified Body guidelines)
 
 ---
 
@@ -390,7 +391,7 @@ If you find this toolkit useful, **please star this repository** to help others 
 - [🎯 Getting Started](/guides/01-getting-started.md) - Start here if you're new
 - [🌍 EU Compliance](/guides/05-compliance-guide-eu.md) - CE marking, RoHS, MDR
 - [🏭 Industry Customization](/guides/02-customization-guide.md) - Adapt for your sector
-- [🤝 Contributing](/CONTRIBUTING.md) - Help improve this toolkit
+- [🤝 Contributing](https://github.com/kathegrima/hardware-pm-starter-kit/pulls) - Submit improvements
 - [📜 License](/LICENSE) - MIT License
 
 ---
