@@ -3,8 +3,8 @@
 > **A comprehensive, ready-to-use toolkit for managing hardware product development from concept to mass production**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Issues](https://img.shields.io/github/issues/[username]/hardware-pm-starter-kit)](https://github.com/[username]/hardware-pm-starter-kit/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/[username]/hardware-pm-starter-kit/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/kathegrima/hardware-pm-starter-kit)](https://github.com/kathegrima/hardware-pm-starter-kit/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/kathegrima/hardware-pm-starter-kit/pulls)
 
 ---
 
