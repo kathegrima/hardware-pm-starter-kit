@@ -59,7 +59,7 @@ Concept → EVT → DVT → PVT → MP → Maintenance → EOL
 | Aspect | Concept | EVT | DVT | PVT | MP |
 |--------|---------|-----|-----|-----|-----|
 | **Duration** | 4-8 weeks | 8-16 weeks | 12-20 weeks | 8-16 weeks | Ongoing |
-| **Build Quantity** | 0-5 units | 10-100 units | 100-500 units | 500-5,000 units | >5,000 units |
+| **Build Quantity** | 0-5 units | 10-100 units | 100-500 units | 100-1,000 units | >5,000 units |
 | **Build Method** | Breadboard, 3D print | PCB + soft tools | PCB + soft tools | Hard tooling | Production tooling |
 | **Design Changes** | Frequent | Common | Minimal | Rare | None (ECO only) |
 | **Cost per Unit** | Very high | High | Medium | Near-target | Target COGS |
