@@ -10,6 +10,7 @@ url: "https://kathegrima.github.io"  # SENZA trailing slash
 # Theme Selection (Cayman = clean, professional, great for docs)
 theme: jekyll-theme-cayman
 
+
 # Build Settings
 markdown: kramdown
 kramdown:
