@@ -1,8 +1,3 @@
----
-layout: default
-title: Templates Directory
----
-
 # Templates Directory - README
 
 > Quick reference guide for hardware project management templates
