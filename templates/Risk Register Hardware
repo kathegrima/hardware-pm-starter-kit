@@ -1,0 +1,346 @@
+# Hardware Risk Register
+
+## Document Metadata
+- **Project Name**: [PROJECT_NAME]
+- **Project Code**: [PROJECT_CODE]
+- **Risk Owner (Primary)**: [PM_NAME]
+- **Last Updated**: [LAST_UPDATE_DATE]
+- **Review Frequency**: [e.g., "Weekly during development, Monthly in production"]
+
+---
+
+## Risk Register Overview
+
+### Risk Scoring Matrix
+| Impact Level | Description | Score |
+|--------------|-------------|-------|
+| **Critical** | Project failure, safety issues, >$100K loss, >3 month delay | 5 |
+| **High** | Major feature loss, $50K-$100K loss, 1-3 month delay | 4 |
+| **Medium** | Performance degradation, $10K-$50K loss, 2-4 week delay | 3 |
+| **Low** | Minor issues, <$10K loss, <2 week delay | 2 |
+| **Minimal** | Negligible impact | 1 |
+
+| Probability | Description | Score |
+|-------------|-------------|-------|
+| **Very High** | >70% chance of occurring | 5 |
+| **High** | 50-70% chance | 4 |
+| **Medium** | 30-50% chance | 3 |
+| **Low** | 10-30% chance | 2 |
+| **Very Low** | <10% chance | 1 |
+
+**Risk Level = Impact × Probability**
+- 15-25: Critical (Red) - Immediate escalation required
+- 10-14: High (Orange) - Active mitigation required
+- 5-9: Medium (Yellow) - Monitor and plan mitigation
+- 1-4: Low (Green) - Accept or monitor
+
+---
+
+## 1. Supply Chain & Procurement Risks
+
+### RISK-SC-001: Component Obsolescence
+- **Description**: Critical component announced EOL (End of Life) during development
+- **Category**: Supply Chain
+- **Impact**: High (4) - Requires redesign, BOM changes, requalification
+- **Probability**: Medium (3) - Common in semiconductor/electronic components
+- **Risk Level**: 12 (High) 🟠
+- **Risk Owner**: Supply Chain Manager
+- **Affected Assets**: [e.g., "Main MCU STM32F4, Motor Driver IC"]
+- **Mitigation Strategy**:
+  - [ ] Select components with >5 year production lifecycle guarantee
+  - [ ] Identify alternate parts during design phase (second source)
+  - [ ] Subscribe to vendor PCN (Product Change Notification) alerts
+  - [ ] Maintain strategic inventory for long-lead components
+- **Contingency Plan**: Pre-qualified alternate MCU (Nordic nRF52) with firmware portability layer
+- **Status**: Active | **Last Review**: [DATE]
+- **Notes**: [Additional context]
+
+---
+
+### RISK-SC-002: Single-Source Supplier Dependency
+- **Description**: Critical component available from only one supplier with no alternatives
+- **Category**: Supply Chain
+- **Impact**: Critical (5) - Production halt if supplier fails
+- **Probability**: Low (2) - Supplier financially stable but geopolitical risks
+- **Risk Level**: 10 (High) 🟠
+- **Risk Owner**: Supply Chain Manager
+- **Affected Assets**: [e.g., "Custom BLDC motor from Vendor X"]
+- **Mitigation Strategy**:
+  - [ ] Negotiate minimum inventory buffer (12 weeks stock)
+  - [ ] Develop second-source qualification plan
+  - [ ] Design motor mount to accommodate alternate motor dimensions (±5mm tolerance)
+  - [ ] Establish quarterly supplier health reviews
+- **Contingency Plan**: Fallback to commercial off-the-shelf motor with 80% performance
+- **Status**: Active | **Last Review**: [DATE]
+
+---
+
+### RISK-SC-003: Extended Lead Times
+- **Description**: Key components have 16+ week lead times, risking schedule delays
+- **Category**: Supply Chain
+- **Impact**: High (4) - Delays EVT/DVT schedule by 4-8 weeks
+- **Probability**: High (4) - Current semiconductor shortage environment
+- **Risk Level**: 16 (Critical) 🔴
+- **Risk Owner**: Supply Chain Manager + Hardware Lead
+- **Affected Assets**: [e.g., "Battery cells, custom magnetics, injection molded enclosure"]
+- **Mitigation Strategy**:
+  - [ ] Place advance purchase orders during design phase
+  - [ ] Use rapid prototyping (3D print, CNC) for early builds instead of waiting for tooling
+  - [ ] Stagger component orders to match critical path
+  - [ ] Establish safety stock policy (4-6 weeks buffer)
+- **Contingency Plan**: Use development kits/EVT with alternate components until production parts arrive
+- **Status**: Critical | **Last Review**: [DATE]
+
+---
+
+### RISK-SC-004: Cost Volatility
+- **Description**: Component pricing fluctuates >20% affecting BOM targets
+- **Category**: Supply Chain / Financial
+- **Impact**: Medium (3) - Erodes margin or requires pricing adjustment
+- **Probability**: Medium (3) - Commodity materials (aluminum, copper, batteries) volatile
+- **Risk Level**: 9 (Medium) 🟡
+- **Risk Owner**: Supply Chain Manager + Finance
+- **Mitigation Strategy**:
+  - [ ] Lock in pricing with long-term agreements (LTA) for high-volume components
+  - [ ] Design margin buffer (15-20% cost contingency)
+  - [ ] Identify cost-reduction opportunities (value engineering)
+  - [ ] Monitor commodity indices weekly
+- **Contingency Plan**: Reduce features or shift to lower-cost materials if BOM exceeds target
+- **Status**: Monitor | **Last Review**: [DATE]
+
+---
+
+## 2. Technical & Engineering Risks
+
+### RISK-TE-001: Thermal Management Failure
+- **Description**: Sustained operation causes CPU/motor drivers to exceed thermal limits (>85°C)
+- **Category**: Technical - Hardware
+- **Impact**: Critical (5) - Safety hazard, component damage, reduced lifespan
+- **Probability**: Medium (3) - Unknown until environmental testing
+- **Risk Level**: 15 (Critical) 🔴
+- **Risk Owner**: Hardware Lead + Mechanical Engineer
+- **Affected Assets**: [e.g., "Motor driver PCB, CPU module, battery pack"]
+- **Mitigation Strategy**:
+  - [ ] Thermal simulation (CFD analysis) during design phase
+  - [ ] Oversized heatsinks and forced air cooling (2x 40mm fans)
+  - [ ] Thermal testing at EVT phase (72hr soak test at 50°C ambient)
+  - [ ] Implement thermal throttling in firmware as safety backstop
+- **Contingency Plan**: Mechanical redesign to add ventilation ports, upgrade to higher-temp rated components
+- **Status**: Active | **Last Review**: [DATE]
+
+---
+
+### RISK-TE-002: EMI/EMC Compliance Failure
+- **Description**: Product fails FCC Part 15 Class B or CE EMC testing
+- **Category**: Technical - Regulatory
+- **Impact**: High (4) - Cannot ship to market, requires costly redesign
+- **Probability**: Medium (3) - Complex digital + motor circuitry
+- **Risk Level**: 12 (High) 🟠
+- **Risk Owner**: Hardware Lead + Compliance Engineer
+- **Mitigation Strategy**:
+  - [ ] EMI pre-compliance testing at EVT phase (in-house or 3rd party)
+  - [ ] Design best practices: ground planes, shielding, filtering, cable routing
+  - [ ] Budget for 2x EMC test cycles (initial + retest after fixes)
+  - [ ] Engage EMC consultant early in layout phase
+- **Contingency Plan**: Add ferrite beads, EMI gaskets, shielded enclosure (adds $15-30 BOM cost)
+- **Status**: Active | **Last Review**: [DATE]
+
+---
+
+### RISK-TE-003: HW/SW Integration Issues
+- **Description**: Firmware/software integration reveals hardware design flaws requiring PCB respin
+- **Category**: Technical - Integration
+- **Impact**: High (4) - 4-6 week delay for PCB redesign + fabrication
+- **Probability**: Medium (3) - First-time integration of complex subsystems
+- **Risk Level**: 12 (High) 🟠
+- **Risk Owner**: Hardware Lead + Firmware Lead
+- **Mitigation Strategy**:
+  - [ ] Component-level testing before integration (test each sensor/actuator standalone)
+  - [ ] Use development boards for early firmware prototyping
+  - [ ] Daily standups between HW/FW teams during integration phase
+  - [ ] Build engineering prototypes with debug headers and test points
+- **Contingency Plan**: Rework/flying wires for minor fixes, green-wire boards for DVT if needed
+- **Status**: Active | **Last Review**: [DATE]
+
+---
+
+### RISK-TE-004: Mechanical Tolerance Stack-Up
+- **Description**: Accumulated tolerances cause fit/assembly issues (parts don't align, excessive gaps)
+- **Category**: Technical - Mechanical
+- **Impact**: Medium (3) - Cosmetic issues, assembly difficulty, yield loss
+- **Probability**: Medium (3) - Complex multi-part assembly
+- **Risk Level**: 9 (Medium) 🟡
+- **Risk Owner**: Mechanical Engineer
+- **Mitigation Strategy**:
+  - [ ] Tolerance analysis (worst-case and statistical) during design
+  - [ ] Design for wider tolerances where possible (±0.3mm instead of ±0.1mm)
+  - [ ] Prototype with production-intent processes (SLA for early, CNC for EVT, tooling for DVT)
+  - [ ] DFM review with manufacturing partner
+- **Contingency Plan**: Adjust CAD models, recut tooling (expensive but necessary)
+- **Status**: Monitor | **Last Review**: [DATE]
+
+---
+
+### RISK-TE-005: Battery Safety & Certification
+- **Description**: Lithium battery fails safety testing (UN38.3, IEC 62133) or presents fire hazard
+- **Category**: Technical - Safety
+- **Impact**: Critical (5) - Cannot ship, liability exposure, product recall
+- **Probability**: Low (2) - Using certified battery cells from Tier-1 supplier
+- **Risk Level**: 10 (High) 🟠
+- **Risk Owner**: Hardware Lead + Compliance Engineer
+- **Mitigation Strategy**:
+  - [ ] Use pre-certified battery packs from reputable suppliers
+  - [ ] Implement battery management system (BMS) with overcharge/discharge/thermal protection
+  - [ ] Conduct abuse testing (overcharge, short circuit, drop test) at EVT
+  - [ ] Obtain battery certifications early (12+ week lead time)
+- **Contingency Plan**: Switch to lower capacity but fully certified battery pack
+- **Status**: Active | **Last Review**: [DATE]
+
+---
+
+## 3. Manufacturing & Scaling Risks
+
+### RISK-MF-001: Low Manufacturing Yield
+- **Description**: Factory yield <85% due to assembly complexity or component sensitivity
+- **Category**: Manufacturing
+- **Impact**: High (4) - Increased COGS, delivery delays, customer quality issues
+- **Probability**: Medium (3) - Complex assembly with 50+ components
+- **Risk Level**: 12 (High) 🟠
+- **Risk Owner**: Manufacturing Engineer + CM
+- **Mitigation Strategy**:
+  - [ ] Design for Manufacturing (DFM) review before tooling release
+  - [ ] Pilot build at DVT phase (50-100 units) to identify yield issues
+  - [ ] Develop detailed assembly SOPs with photos/videos
+  - [ ] Implement test fixtures for in-line testing (not just final test)
+- **Contingency Plan**: Simplify assembly (reduce part count), add poka-yoke features
+- **Status**: Active | **Last Review**: [DATE]
+
+---
+
+### RISK-MF-002: CM Capacity Constraints
+- **Description**: Contract manufacturer cannot scale to required production volume (target: 5K units/month)
+- **Category**: Manufacturing / Supply Chain
+- **Impact**: High (4) - Cannot meet customer demand, lose market window
+- **Probability**: Low (2) - CM pre-qualified with 10K/month capacity
+- **Risk Level**: 8 (Medium) 🟡
+- **Risk Owner**: Operations + Supply Chain Manager
+- **Mitigation Strategy**:
+  - [ ] Verify CM capacity during vendor selection (site visit + reference checks)
+  - [ ] Ramp production gradually: 1K → 2K → 5K units/month
+  - [ ] Identify backup CM (qualified as secondary)
+  - [ ] Lock in capacity with advance purchase commitments
+- **Contingency Plan**: Split production across two CMs (adds complexity)
+- **Status**: Monitor | **Last Review**: [DATE]
+
+---
+
+### RISK-MF-003: Quality Escapes (OOB Failures)
+- **Description**: Out-of-box (OOB) failure rate >2% due to inadequate factory testing
+- **Category**: Manufacturing / Quality
+- **Impact**: Critical (5) - Customer dissatisfaction, returns, brand damage
+- **Probability**: Medium (3) - First production run always has infant mortality
+- **Risk Level**: 15 (Critical) 🔴
+- **Risk Owner**: QA Lead + Manufacturing Engineer
+- **Mitigation Strategy**:
+  - [ ] Develop comprehensive factory test plan (functional + stress tests)
+  - [ ] Implement burn-in testing (24-48hr power-on soak)
+  - [ ] Strict QC documentation (tolerances, cosmetic acceptance criteria)
+  - [ ] Sampling inspection: 100% test for first 500 units, then AQL 1.5% sampling
+- **Contingency Plan**: 100% testing until yield stabilizes, RMA process for early returns
+- **Status**: Critical | **Last Review**: [DATE]
+
+---
+
+## 4. Compliance & Regulatory Risks
+
+### RISK-CR-001: Certification Delays
+- **Description**: CE/FCC/UL certification testing delayed or requires resubmission
+- **Category**: Compliance / Regulatory
+- **Impact**: Critical (5) - Cannot launch product, miss market window
+- **Probability**: Medium (3) - First submission often requires iterations
+- **Risk Level**: 15 (Critical) 🔴
+- **Risk Owner**: Compliance Engineer
+- **Mitigation Strategy**:
+  - [ ] Engage test lab early, schedule testing 3 months before launch
+  - [ ] Pre-compliance testing at DVT phase
+  - [ ] Budget 6-8 weeks for test + iteration + certification issuance
+  - [ ] Design margin into schedules for 1 retest cycle
+- **Contingency Plan**: Ship to non-regulated markets first (B2B, industrial) while awaiting consumer certifications
+- **Status**: Active | **Last Review**: [DATE]
+
+---
+
+### RISK-CR-002: Regulatory Requirements Change
+- **Description**: New regulations imposed mid-development (e.g., updated RoHS, new safety standards)
+- **Category**: Compliance / Regulatory
+- **Impact**: High (4) - Requires design changes, requalification, delay
+- **Probability**: Low (2) - Rare but possible for multi-year projects
+- **Risk Level**: 8 (Medium) 🟡
+- **Risk Owner**: Compliance Engineer + Product Owner
+- **Mitigation Strategy**:
+  - [ ] Monitor regulatory changes (subscribe to industry alerts)
+  - [ ] Design to current + anticipated future standards when possible
+  - [ ] Maintain flexibility in design for minor compliance adjustments
+- **Contingency Plan**: Delay launch to meet new requirements, or limit to markets with old regulations
+- **Status**: Monitor | **Last Review**: [DATE]
+
+---
+
+## 5. Market & Business Risks
+
+### RISK-MB-001: Market Timing Miss
+- **Description**: Product launches after competitor or market demand shifts
+- **Category**: Market / Business
+- **Impact**: High (4) - Reduced revenue, harder sales, lower margins
+- **Probability**: Medium (3) - 18-month development in fast-moving market
+- **Risk Level**: 12 (High) 🟠
+- **Risk Owner**: Product Owner + Executive Sponsor
+- **Mitigation Strategy**:
+  - [ ] Quarterly competitive analysis and market validation
+  - [ ] MVP approach: launch with core features, add enhancements in v2
+  - [ ] Maintain schedule discipline (weekly reviews, critical path management)
+  - [ ] Consider soft launch / beta program to early customers
+- **Contingency Plan**: Pivot product positioning, adjust pricing, or focus on underserved niche
+- **Status**: Monitor | **Last Review**: [DATE]
+
+---
+
+### RISK-MB-002: Feature Creep
+- **Description**: Stakeholders add features mid-development, causing scope expansion and delays
+- **Category**: Business / Project Management
+- **Impact**: Medium (3) - Schedule delay, cost overrun, team burnout
+- **Probability**: High (4) - Common in startup/entrepreneurial environments
+- **Risk Level**: 12 (High) 🟠
+- **Risk Owner**: Project Manager + Product Owner
+- **Mitigation Strategy**:
+  - [ ] Lock requirements at Design Review gate (end of Engineering Prototype phase)
+  - [ ] Formal change control process: all changes via ECO with impact assessment
+  - [ ] Maintain product roadmap: defer non-critical features to v2
+  - [ ] Weekly stakeholder alignment meetings
+- **Contingency Plan**: Extend schedule, cut lower-priority features, or increase budget
+- **Status**: Active | **Last Review**: [DATE]
+
+---
+
+## Risk Summary Dashboard
+
+| Risk ID | Category | Description | Risk Level | Status |
+|---------|----------|-------------|------------|--------|
+| SC-003 | Supply Chain | Extended lead times | 16 🔴 | Critical |
+| TE-001 | Technical | Thermal management | 15 🔴 | Critical |
+| CR-001 | Compliance | Certification delays | 15 🔴 | Critical |
+| MF-003 | Manufacturing | Quality escapes | 15 🔴 | Critical |
+| SC-001 | Supply Chain | Component obsolescence | 12 🟠 | Active |
+| TE-002 | Technical | EMI/EMC compliance | 12 🟠 | Active |
+| TE-003 | Technical | HW/SW integration | 12 🟠 | Active |
+| MF-001 | Manufacturing | Manufacturing yield | 12 🟠 | Active |
+| MB-001 | Market | Market timing | 12 🟠 | Monitor |
+| MB-002 | Business | Feature creep | 12 🟠 | Active |
+
+---
+
+## References & Framework
+This risk register follows **NIST SP 800-30** (Risk Assessment) and **NIST IR 8286** (Enterprise Risk Management) frameworks, adapted for hardware product development based on industry best practices from Product Realization Group (PRG) "10 Best Practices for Managing Hardware Development Risk."
+
+**Document Version**: 1.0  
+**Template Version**: hardware-pm-starter-kit v1.0
