@@ -6,7 +6,7 @@
 
 ## What Makes Hardware PM Different?
 
-Hardware project management differs fundamentally from software PM due to the **physical nature of products** and **long lead times** [web:88][web:89].
+Hardware project management differs fundamentally from software PM due to the **physical nature of products** and **long lead times**.
 
 ### Key Differences: Hardware vs Software PM
 
@@ -21,13 +21,13 @@ Hardware project management differs fundamentally from software PM due to the **
 | **Feedback Loops** | Real-time analytics | Post-launch field data (delayed) |
 | **Dependencies** | APIs, libraries | Component availability, supplier capacity |
 
-*Source: Software mistakes become bugs. Hardware mistakes become years of cost and reputation impact.* [web:95]
+*Source: Software mistakes become bugs. Hardware mistakes become years of cost and reputation impact.* 
 
 ---
 
 ## The Hardware Development Lifecycle
 
-Hardware projects follow a structured **phase-gate process** to minimize risk and ensure quality [web:89][web:93].
+Hardware projects follow a structured **phase-gate process** to minimize risk and ensure quality.
 
 ### Standard Hardware Phases
 
@@ -76,7 +76,7 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 
 ### 1. Employ Agile Hardware Development
 
-Adapt Agile principles for physical products [web:89][web:88]:
+Adapt Agile principles for physical products :
 
 **Core Principles**:
 - **Assign experienced NPDI project manager** - Hardware complexity requires PM with manufacturing experience
@@ -91,7 +91,7 @@ Adapt Agile principles for physical products [web:89][web:88]:
 
 ### 2. Leverage Modeling and Simulation
 
-Reduce risk and cost through virtual validation [web:89]:
+Reduce risk and cost through virtual validation:
 
 **Tools to Use**:
 - **Thermal simulation** (CFD) - Prevent overheating issues
@@ -107,7 +107,7 @@ Reduce risk and cost through virtual validation [web:89]:
 
 ### 3. Develop a Minimum Viable Product (MVP)
 
-Focus on core requirements first [web:89]:
+Focus on core requirements first:
 
 **MVP Questions**:
 - Is this feature absolutely necessary for the first product to ship?
@@ -124,7 +124,7 @@ Focus on core requirements first [web:89]:
 
 ### 4. Understand and Mitigate Risks Early
 
-Address risks proactively, not reactively [web:89]:
+Address risks proactively, not reactively:
 
 **Critical Risk Areas**:
 - ✅ **Business model validated** - Clear value proposition and pricing strategy
@@ -143,7 +143,7 @@ Address risks proactively, not reactively [web:89]:
 
 ### 5. Apply Design for Excellence (DfX)
 
-Design for the entire product lifecycle [web:89]:
+Design for the entire product lifecycle:
 
 **DfX Dimensions**:
 - **Design for Reliability (DfR)** - MTBF targets, failure analysis
@@ -157,7 +157,7 @@ Design for the entire product lifecycle [web:89]:
 
 ### 6. Incorporate Reliability, Validation, and Testing
 
-Build quality in from the start [web:89]:
+Build quality in from the start:
 
 **Product Reliability**:
 - Tradeoff between time, cost, and reliability
@@ -176,7 +176,7 @@ Build quality in from the start [web:89]:
 
 ### 7. Meet Agency and Environmental Compliance
 
-Compliance is non-negotiable [web:89]:
+Compliance is non-negotiable:
 
 **European & International Requirements** (relevant for Italy/EU):
 - **CE** - Conformité Européenne (mandatory for EU market)
@@ -201,7 +201,7 @@ Compliance is non-negotiable [web:89]:
 
 ### 8. Deploy Scalable Business Systems
 
-Break down silos with integrated tools [web:89]:
+Break down silos with integrated tools:
 
 **Essential Systems**:
 - **CAD** - Electrical (Altium, OrCAD), Mechanical (SolidWorks, Fusion 360)
@@ -214,7 +214,7 @@ Break down silos with integrated tools [web:89]:
 
 ### 9. Develop a Resilient Supply Chain
 
-Avoid the "designing for prototype" trap [web:89]:
+Avoid the "designing for prototype" trap:
 
 **Supply Chain Best Practices**:
 - **Use standard, short lead-time parts** - Avoid custom/exotic components
@@ -232,7 +232,7 @@ Avoid the "designing for prototype" trap [web:89]:
 
 ### 10. Verify Readiness for Volume Manufacturing
 
-Follow phase-gate process rigorously [web:89]:
+Follow phase-gate process rigorously:
 
 **Why Phase Gates Matter**:
 - Costs for mistakes escalate rapidly: Feasibility → Prototype → Pilot → Production
@@ -253,7 +253,7 @@ Follow phase-gate process rigorously [web:89]:
 
 ## Communication Best Practices
 
-Effective communication is critical in hardware projects due to cross-functional complexity [web:88].
+Effective communication is critical in hardware projects due to cross-functional complexity.
 
 ### Team Synchronization Meetings
 
@@ -270,7 +270,7 @@ Effective communication is critical in hardware projects due to cross-functional
 
 ### Meeting Efficiency Tips
 
-**Keep Meetings Short** [web:88]:
+**Keep Meetings Short**:
 - Limit to 20-30 minutes by breaking problems into smaller parts
 - Long meetings (2+ hours) kill productivity for the rest of the day
 
@@ -287,7 +287,7 @@ Effective communication is critical in hardware projects due to cross-functional
 
 ### Documentation Management
 
-**Cloud-Based Version Control** [web:88]:
+**Cloud-Based Version Control**:
 - Store schematics, PCBs, CAD files online (not local computers)
 - Single source of truth accessible to all team members
 - Automatic versioning and change logging
@@ -303,7 +303,7 @@ Effective communication is critical in hardware projects due to cross-functional
 
 ## Digital Transformation for Hardware Teams
 
-Modern hardware development requires integrated, cloud-based tools [web:88].
+Modern hardware development requires integrated, cloud-based tools.
 
 ### Core Activities
 
@@ -450,8 +450,8 @@ Modern hardware development requires integrated, cloud-based tools [web:88].
 
 Found this guide helpful? Have suggestions for improvement?
 
-- **GitHub Issues**: [Report issues or suggest improvements](https://github.com/[username]/hardware-pm-starter-kit/issues)
-- **Discussions**: [Join the conversation](https://github.com/[username]/hardware-pm-starter-kit/discussions)
+- **GitHub Issues**: [Report issues or suggest improvements](https://github.com/kathegrima/hardware-pm-starter-kit/issues)
+- **Discussions**: [Join the conversation](https://github.com/kathegrima/hardware-pm-starter-kit/discussions)
 - **Pull Requests**: Contributions welcome!
 
 ---
