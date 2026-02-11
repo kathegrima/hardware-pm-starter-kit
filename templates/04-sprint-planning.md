@@ -5,6 +5,9 @@
 
 ---
 
+**Navigation**: [🏠 Home](../) | [📋 All Templates](../templates/) | [📚 All Guides](../guides/)
+
+---
 ## Sprint Overview
 
 - **Sprint Number**: `Sprint #[X]`
