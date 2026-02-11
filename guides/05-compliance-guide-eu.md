@@ -47,7 +47,7 @@
 | **Regulatory Body** | European Commission | FCC, UL, FDA | CNCA |
 | **Approach** | Self-declaration + testing | Third-party certification | Mandatory certification |
 | **Timeline** | 3-6 months | 2-4 months | 4-8 months |
-| **Cost** | €10K-€100K | $5K-$50K | $10K-$30K |
+| **Cost** | €5K-€100K | $5K-$50K | $10K-$30K |
 | **Testing Labs** | Any accredited lab | FCC-listed labs | CNAS-accredited only |
 | **Documentation** | Technical file (heavy) | Test reports | Factory inspection required |
 
@@ -259,7 +259,7 @@ CE marking is mandatory for products covered by **EU directives**. Most hardware
 - SAR testing (if device used <20cm from body)
 
 **Timeline**: 4-8 weeks  
-**Cost**: €15,000-€40,000 (most expensive EU compliance)  
+**Cost**: €15,000-€40,000 typical (up to €60,000 for complex multi-radio products)
 **Notified Body**: Required for RED Module B+C (full QA) or self-declaration with Module A
 
 **Common Failures**:
