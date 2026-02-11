@@ -645,11 +645,12 @@ Hardware projects require coordination of many processes and people with diverse
 ### Step 2: Use the Templates
 
 This starter kit provides ready-to-use templates:
-1. Start with **Project Charter** - define scope, team, timeline, success criteria
-2. Create **Risk Register** - identify hardware-specific risks early
-3. Plan phases using **Phase Gate Checklist** - customize for your industry
-4. Adapt **Sprint Planning Template** for 4-8 week hardware sprints
-5. Track with **BOM Template** and **Test Plan Template**
+1. Start with **[Project Charter](../templates/01-project-charter.md)** - define scope, team, timeline, success criteria
+2. Create **[Risk Register](../templates/02-risk-register.md)** - identify hardware-specific risks early
+3. Plan phases using **[Phase Gate Checklist](../templates/03-phase-gate-checklist.md)** - customize for your industry
+4. Adapt **[Sprint Planning Template](../templates/04-sprint-planning.md)** for 4-8 week hardware sprints
+5. Track with **[BOM Template](../templates/07-bom-template.md)** and **[Test Plan Template](../templates/09-test-plan-template.md)**
+
 
 ### Step 3: Build Your Team
 
