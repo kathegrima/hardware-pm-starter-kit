@@ -1,3 +1,24 @@
+---
+layout: default
+title: Home
+---
+
+# Hardware PM Starter Kit
+
+> **Comprehensive templates and guides** for hardware product managers
+
+---
+
+## 🚀 Quick Start
+
+Choose your path:
+
+| If you're... | Start here |
+|--------------|------------|
+| **New to hardware PM** | [Getting Started Guide](guides/01-getting-started.md) |
+| **Planning a new project** | [Project Charter](templates/01-project-charter.md) |
+| **Managing EU compliance** | [EU Compliance Guide](guides/05-compliance-guide-eu.md) |
+
 # 🛠️ Hardware Project Management Starter Kit
 
 > **A comprehensive, ready-to-use toolkit for managing hardware product development from concept to mass production**
