@@ -90,7 +90,9 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 
 **Timeline Adjustments**:
 - **Much longer phases**: EVT (12-20 weeks), DVT (20-32 weeks), PVT (12-20 weeks)
-- **Extended certification**: Add 6-12 months for regulatory approval
+- **Extended certification**: Add 12-24 months for MDR regulatory approval (Notified Body involvement mandatory for Class IIa and above)
+  - **Clinical evidence requirements**: Add 6-12 months for clinical evaluation/data collection
+  - **Note**: MDR fully effective since May 2021, all new devices must comply (no more MDD grandfathering as of May 2024)
 - **Total timeline**: 18-36 months typical (vs 9-18 months consumer)
 - **Product lifecycle**: 5-10+ years (factor in long-term support)
 
@@ -265,7 +267,11 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 **Compliance Requirements**:
 - **Europe/Italy**: CE marking, RED (Radio Equipment Directive) for wireless
 - **United States**: FCC Part 15 (Wi-Fi/Bluetooth), FCC Part 22/24 (cellular)
-- **Cybersecurity**: ETSI EN 303 645 (EU IoT security standard)
+- **Cybersecurity (effective 2027)**: 
+  - Cyber Resilience Act (Regulation EU 2024/2847) - mandatory for products with digital elements
+  - ETSI EN 303 645 (EU IoT security baseline)
+  - Essential cybersecurity requirements (Annex I CRA)
+  - Timeline: Applies from December 2027, start planning in 2026
 - **Data privacy**: GDPR (EU), CCPA (California)
 - **Wireless**: Bluetooth SIG certification, Wi-Fi Alliance certification
 
