@@ -27,9 +27,9 @@
 | Acronym | Full Term | Description |
 |---------|-----------|-------------|
 | **POC** | Proof of Concept | Initial feasibility demonstration |
-| **EVT** | Engineering Validation Test | First functional prototypes (100-1,000 units) |
-| **DVT** | Design Validation Test | Production-intent design validation (300-2,000 units) |
-| **PVT** | Production Validation Test | Manufacturing process validation (1K-20K units) |
+| **EVT** | Engineering Validation Test | First functional prototypes (10-50 units) |
+| **DVT** | Design Validation Test | Production-intent design validation (50-200 units) |
+| **PVT** | Production Validation Test | Manufacturing process validation (200-1,000 units) |
 | **MP** | Mass Production | Volume manufacturing and shipment |
 
 ### Supply Chain & Manufacturing
