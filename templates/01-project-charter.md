@@ -9,11 +9,12 @@
 | Field | Details |
 |-------|---------|
 | **Project Name** | [Enter project name] |
+| **Project Code** | [Enter project code] |
 | **Version** | [e.g., v1.0] |
 | **Project Manager** | [Name] |
 | **Date Created** | [YYYY-MM-DD] |
 | **Last Updated** | [YYYY-MM-DD] |
-| **Status** | [ ] Draft   [ ] Approved   [ ] Active   [ ] Complete |
+| **Status** | [ ] Draft   [ ] Under Review   [ ] Approved   [ ] Active   [ ] Complete |
 
 ---
 
@@ -43,6 +44,21 @@
 
 ---
 
+### Alignment with Organizational Goals
+
+**How does this project support company strategy?**
+
+**Company Goals Supported**:
+1. `[Company Goal 1]` - [How this project contributes]
+2. `[Company Goal 2]` - [How this project contributes]
+3. `[Company Goal 3]` - [How this project contributes]
+
+**Success Metrics Alignment**:
+- Company OKR: `[OKR Name]` → Project KPI: `[Related KPI]`
+- Company OKR: `[OKR Name]` → Project KPI: `[Related KPI]`
+
+---
+
 ### Product Objectives
 
 **What will this product achieve?**
@@ -58,13 +74,28 @@
 **How will we measure success?**
 
 | Metric | Target | Measurement Method |
-|--------|--------|--------------------|
+|--------|--------|-------------------|
 | **Time to Market** | [e.g., 14 months from kickoff to first shipment] | Project schedule tracking |
 | **Product Performance** | [e.g., Battery life >6 months, sensor accuracy ±3%] | Lab testing validation |
 | **Cost Target** | [e.g., COGS <€25, total NRE <€300K] | BOM costing, budget tracking |
 | **Quality Target** | [e.g., <2% return rate, >95% manufacturing yield] | Quality metrics post-launch |
 | **Customer Satisfaction** | [e.g., NPS >50 within 6 months of launch] | Customer surveys |
 | **Business Goal** | [e.g., 50,000 units sold in Year 1] | Sales data |
+
+---
+
+### Key Performance Indicators (KPIs)
+
+**Project KPIs tracked throughout development**:
+
+| KPI | Target | Measurement Method | Frequency |
+|-----|--------|-------------------|-----------|
+| **BOM Cost** | [e.g., €25 at 10K volume] | Cost rollup from BOM | Monthly |
+| **Schedule Adherence** | [e.g., 0% slip from baseline] | Timeline vs actual | Weekly |
+| **Prototype Iterations** | [e.g., <3 per phase] | Build count tracking | Per phase |
+| **Defect Rate** | [e.g., <5% at PVT] | Testing results | Per build |
+| **Budget Variance** | [e.g., ±10%] | Actual vs planned spend | Monthly |
+| **Manufacturing Yield** | [e.g., >95% at PVT] | Production data | Per build |
 
 ---
 
@@ -91,6 +122,20 @@
 - [ ] DVT (Design Validation Test)
 - [ ] PVT (Production Validation Test)
 - [ ] MP (Mass Production ramp)
+
+---
+
+### Phase-Based Deliverables
+
+**Clear deliverables with acceptance criteria for each phase**:
+
+| Phase | Key Deliverables | Quantity | Acceptance Criteria |
+|-------|-----------------|----------|---------------------|
+| **Concept** | PRD, feasibility study, system architecture | Documentation | Approved by stakeholders, technical feasibility proven |
+| **EVT** | Functional prototypes | [e.g., 10-50 units] | Core features working, major technical risks retired |
+| **DVT** | Production-intent prototypes | [e.g., 100-300 units] | All requirements met, DFM approved, compliance pre-test passed |
+| **PVT** | Pilot production units | [e.g., 500-2000 units] | Yield >[X]%, all certifications complete, manufacturing validated |
+| **MP Readiness** | Manufacturing package, qualified suppliers | Complete documentation | Ready for volume production, first production run successful |
 
 ---
 
@@ -139,6 +184,8 @@
 
 ### Project Team
 
+**Core team members with dedicated allocation**:
+
 | Role | Name | Responsibilities | Allocation |
 |------|------|-----------------|------------|
 | **Project Manager** | [Name] | Timeline, budget, coordination, risk management | 100% |
@@ -148,6 +195,20 @@
 | **Mobile App Developer** | [Name / External] | iOS & Android app development | [TBD] |
 | **Quality Engineer** | [Name] | Test plans, validation, compliance | 50% |
 | **Manufacturing Engineer** | [Name / CM] | DFM review, process optimization, CM liaison | 25% |
+
+---
+
+### Extended Team / Subject Matter Experts
+
+**Part-time contributors and specialists**:
+
+| Name | Role | Contribution | Involvement |
+|------|------|-------------|-------------|
+| [Name] | Industrial Designer | Product aesthetics, user experience, branding | Phase 1-2 (Concept-EVT) |
+| [Name] | Compliance Engineer | Regulatory strategy, certification management | Phase 2-4 (EVT-PVT) |
+| [Name] | Quality Assurance Lead | Quality planning, FMEA, reliability testing | Phase 2-5 (DVT-MP) |
+| [Name] | Product Manager | Requirements definition, customer feedback | All phases |
+| [Name] | Supply Chain Specialist | Component sourcing, supplier qualification | Phase 2-5 (EVT-MP) |
 
 ---
 
@@ -168,7 +229,7 @@
 **How will we keep stakeholders informed?**
 
 | Audience | Method | Frequency | Content |
-|----------|--------|-----------|---------|
+|----------|--------|-----------|---------| 
 | **Core Team** | Daily standup (Slack) | Daily (async) | Blockers, progress, questions |
 | **Core Team** | Team sync meeting | 2x per week | Design discussions, decisions, integration |
 | **Project Sponsor** | Status report | Weekly | Timeline, budget, risks, decisions needed |
@@ -205,7 +266,7 @@
 
 ---
 
-## Budget
+## Budget & Resources
 
 ### Budget Summary
 
@@ -219,6 +280,34 @@
 | **First Production Run** | [€80,000] | [TBD] | - | 5,000 units @ €16 COGS (includes assembly) |
 | **Contingency (15%)** | [€50,000] | [TBD] | - | Buffer for unknowns |
 | **TOTAL** | **€400,000** | **[TBD]** | **-** | - |
+
+---
+
+### Resource Requirements
+
+**Human Resources**:
+
+| Role | Allocation | Duration | Cost |
+|------|------------|----------|------|
+| Project Manager | [100%] / [1.0] FTE | [14] months | [€X] |
+| Hardware Engineer | [100%] / [1.0] FTE | [12] months | [€X] |
+| Firmware Engineer | [100%] / [1.0] FTE | [12] months | [€X] |
+| Mechanical Engineer | [50%] / [0.5] FTE | [10] months | [€X] |
+| Test Engineer | [75%] / [0.75] FTE | [8] months | [€X] |
+| Supply Chain Manager | [25%] / [0.25] FTE | [10] months | [€X] |
+| Manufacturing Engineer | [50%] / [0.5] FTE | [6] months | [€X] |
+
+**Equipment & Tools**:
+- [Equipment 1] - Cost: [€X] - Purpose: [e.g., Thermal chamber for environmental testing]
+- [Equipment 2] - Cost: [€X] - Purpose: [e.g., Oscilloscope for signal analysis]
+- CAD software licenses: [€X]
+- Testing equipment rental: [€X]
+
+**Facilities**:
+- Lab space required: [e.g., 200 sq ft]
+- Manufacturing space (pilot): [e.g., 500 sq ft at CM facility]
+- Storage for prototypes and inventory: [e.g., 100 sq ft]
+- Special requirements: [e.g., ESD-safe workstations, environmental chamber access]
 
 ---
 
@@ -248,6 +337,7 @@
 - Risks reviewed in every team meeting
 - High-impact risks escalated to sponsor immediately
 - Monthly risk review with stakeholders
+- Detailed risk tracking in [Risk Register](../templates/02-risk-register.md)
 
 ---
 
@@ -318,6 +408,7 @@
 - Risks identified and mitigation plans in place
 - Budget and schedule on track (or variance explained)
 - Next phase plan ready
+- Detailed criteria in [Phase Gate Checklist](../templates/03-phase-gate-checklist.md)
 
 ---
 
@@ -326,7 +417,7 @@
 **How do we handle changes after approval?**
 
 **Change Request Process**:
-1. Anyone can submit change request (use template)
+1. Anyone can submit change request (use [Change Request Form](../templates/10-change-request-form.md))
 2. PM reviews for impact (timeline, budget, scope)
 3. PM presents to Change Control Board (CCB) if material
 4. CCB approves/rejects/defers
@@ -402,6 +493,9 @@
 **Things to do differently next time**:
 - [Capture learnings to improve future projects]
 
+**Post-Project Review**:
+- Complete [Lessons Learned Template](../templates/05-lessons-learned.md) at project closure
+
 ---
 
 ## Approvals
@@ -425,12 +519,13 @@
 ### Appendix A: Related Documents
 
 **Supporting documentation**:
-- [ ] Product Requirements Document (PRD)
-- [ ] Risk Register (detailed version)
+- [ ] [Product Requirements Document (PRD)](../templates/06-prd-template.md)
+- [ ] [Risk Register](../templates/02-risk-register.md) (detailed version)
 - [ ] Project Schedule (Gantt chart)
 - [ ] Budget Breakdown Spreadsheet
 - [ ] Organizational Chart
-- [ ] Communication Plan (detailed)
+- [ ] [Phase Gate Checklist](../templates/03-phase-gate-checklist.md)
+- [ ] [Sprint Planning Template](../templates/04-sprint-planning.md)
 
 ---
 
@@ -443,15 +538,19 @@
 - **DFM**: Design for Manufacturability
 - **DVT**: Design Validation Test
 - **EMC**: Electromagnetic Compatibility
+- **EOL**: End of Life (component discontinuation)
 - **EVT**: Engineering Validation Test
 - **FCC**: Federal Communications Commission (US)
+- **FTE**: Full-Time Equivalent
 - **MP**: Mass Production
 - **NPS**: Net Promoter Score
 - **NRE**: Non-Recurring Engineering
+- **OKR**: Objectives and Key Results
 - **PM**: Project Manager
 - **PRD**: Product Requirements Document
 - **PVT**: Production Validation Test
 - **RoHS**: Restriction of Hazardous Substances
+- **SME**: Subject Matter Expert
 
 ---
 
@@ -461,6 +560,7 @@
 |---------|------|--------|---------|
 | v0.1 | [Date] | [Name] | Initial draft |
 | v1.0 | [Date] | [Name] | Approved version for project kickoff |
+| v1.1 | [Date] | [Name] | Updated with [description of changes] |
 
 ---
 
@@ -476,19 +576,26 @@
 
 3. **Be Realistic**: Don't lowball timelines or budgets to get approval. Unrealistic charters lead to failed projects.
 
-4. **Update as Needed**: The charter is not set in stone. If major changes occur (scope, budget, timeline), update the charter and get re-approval.
+4. **Link to Company Goals**: Use the "Alignment with Organizational Goals" section to connect project KPIs to company OKRs - this helps secure executive buy-in.
 
-5. **Reference Often**: Use the charter in every gate review and status meeting to ensure project stays aligned with original objectives.
+5. **Track KPIs with Frequency**: The KPI table includes tracking frequency - set up automated dashboards to monitor weekly/monthly metrics.
 
-6. **Lock Before EVT**: Once approved, the charter should be locked for EVT phase. Changes require formal change control process.
+6. **Manage Extended Team**: Use the "Extended Team / SME" section to track part-time contributors and ensure they're available when needed.
 
-7. **One-Page Summary**: Create a one-page executive summary of the charter for quick reference and presentations.
+7. **Update as Needed**: The charter is not set in stone. If major changes occur (scope, budget, timeline), update the charter and get re-approval through change control process.
+
+8. **Reference Often**: Use the charter in every gate review and status meeting to ensure project stays aligned with original objectives.
+
+9. **Lock Before EVT**: Once approved, the charter should be locked for EVT phase. Changes require formal change control process.
+
+10. **One-Page Summary**: Create a one-page executive summary of the charter for quick reference and presentations.
 
 ---
 
-**Template Version**: v1.0  
+**Template Version**: v1.1  
 **Last Updated**: February 2026  
-**Part of**: Hardware PM Starter Kit
+**Part of**: Hardware PM Starter Kit  
+**Repository**: https://github.com/kathegrima/hardware-pm-starter-kit
 
 ---
 
