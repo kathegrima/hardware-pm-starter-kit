@@ -132,12 +132,16 @@ SmartSense Air Quality Monitor (System)
 
 ## BOM Template
 
-### Excel/Google Sheets Template
+### CSV Template
 
-**Download Links**:
-- Excel: [07-bom-template.xlsx](../templates/07-bom-template.xlsx)
-- Google Sheets: [Make a copy](https://docs.google.com/spreadsheets/d/...)
-- CSV: [07-bom-template.csv](../templates/07-bom-template.csv)
+**Download**: [07-bom-template.csv](../templates/07-bom-template.csv)
+
+💡 **Tip**: Open this CSV file in Excel or Google Sheets to:
+- Add formulas (e.g., `=Qty*Unit Cost` for Ext Cost)
+- Apply formatting (colors, filters, conditional formatting)
+- Save as .xlsx for your project
+
+The CSV format is used for maximum compatibility and Git version control.
 
 ---
 
