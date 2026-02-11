@@ -6,7 +6,7 @@
 
 ## What Makes Hardware PM Different?
 
-Hardware project management differs fundamentally from software PM due to the **physical nature of products** and **long lead times** [page:88][page:89].
+Hardware project management differs fundamentally from software PM due to the **physical nature of products** and **long lead times** [web:88][web:89].
 
 ### Key Differences: Hardware vs Software PM
 
@@ -27,7 +27,7 @@ Hardware project management differs fundamentally from software PM due to the **
 
 ## The Hardware Development Lifecycle
 
-Hardware projects follow a structured **phase-gate process** to minimize risk and ensure quality [page:89][web:93].
+Hardware projects follow a structured **phase-gate process** to minimize risk and ensure quality [web:89][web:93].
 
 ### Standard Hardware Phases
 
@@ -76,7 +76,7 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 
 ### 1. Employ Agile Hardware Development
 
-Adapt Agile principles for physical products [page:89][web:88]:
+Adapt Agile principles for physical products [web:89][web:88]:
 
 **Core Principles**:
 - **Assign experienced NPDI project manager** - Hardware complexity requires PM with manufacturing experience
@@ -91,7 +91,7 @@ Adapt Agile principles for physical products [page:89][web:88]:
 
 ### 2. Leverage Modeling and Simulation
 
-Reduce risk and cost through virtual validation [page:89]:
+Reduce risk and cost through virtual validation [web:89]:
 
 **Tools to Use**:
 - **Thermal simulation** (CFD) - Prevent overheating issues
@@ -107,7 +107,7 @@ Reduce risk and cost through virtual validation [page:89]:
 
 ### 3. Develop a Minimum Viable Product (MVP)
 
-Focus on core requirements first [page:89]:
+Focus on core requirements first [web:89]:
 
 **MVP Questions**:
 - Is this feature absolutely necessary for the first product to ship?
@@ -124,7 +124,7 @@ Focus on core requirements first [page:89]:
 
 ### 4. Understand and Mitigate Risks Early
 
-Address risks proactively, not reactively [page:89]:
+Address risks proactively, not reactively [web:89]:
 
 **Critical Risk Areas**:
 - ✅ **Business model validated** - Clear value proposition and pricing strategy
@@ -143,7 +143,7 @@ Address risks proactively, not reactively [page:89]:
 
 ### 5. Apply Design for Excellence (DfX)
 
-Design for the entire product lifecycle [page:89]:
+Design for the entire product lifecycle [web:89]:
 
 **DfX Dimensions**:
 - **Design for Reliability (DfR)** - MTBF targets, failure analysis
@@ -157,7 +157,7 @@ Design for the entire product lifecycle [page:89]:
 
 ### 6. Incorporate Reliability, Validation, and Testing
 
-Build quality in from the start [page:89]:
+Build quality in from the start [web:89]:
 
 **Product Reliability**:
 - Tradeoff between time, cost, and reliability
@@ -176,26 +176,32 @@ Build quality in from the start [page:89]:
 
 ### 7. Meet Agency and Environmental Compliance
 
-Compliance is non-negotiable [page:89]:
+Compliance is non-negotiable [web:89]:
 
-**Common Requirements**:
-- **FDA** - Medical devices
-- **UL** - Safety certification (electrical products)
-- **FCC** - Electromagnetic emissions (US)
-- **CE** - European product safety
-- **RoHS** - Hazardous substance restrictions
-- **WEEE** - Electronic waste disposal
-- **IP ratings** - Dust and water ingress protection
+**European & International Requirements** (relevant for Italy/EU):
+- **CE** - Conformité Européenne (mandatory for EU market)
+- **RoHS** - Restriction of Hazardous Substances (EU directive 2011/65/EU)
+- **REACH** - Chemical safety regulation (EU regulation EC 1907/2006)
+- **WEEE** - Waste Electrical and Electronic Equipment (EU directive 2012/19/EU)
+- **IEC** - International Electrotechnical Commission standards
+- **ISO** - International Organization for Standardization (ISO 9001, etc.)
+- **IP ratings** - Ingress Protection (dust and water - IEC 60529)
+
+**Other Common Requirements**:
+- **FDA** - Medical devices (US, but often required for global market)
+- **UL** - Safety certification for electrical products
+- **FCC** - Electromagnetic emissions (US market)
 
 **Best Practices**:
 - Define compliance strategy at Concept phase
 - Schedule pre-compliance testing at EVT (saves certification time)
 - Budget 3-6 months for full certification process
-- Factor compliance costs into NRE budget ($50K-$500K+)
+- Factor compliance costs into NRE budget (€50K-€500K+)
+- Consider both EU and global market requirements from start
 
 ### 8. Deploy Scalable Business Systems
 
-Break down silos with integrated tools [page:89]:
+Break down silos with integrated tools [web:89]:
 
 **Essential Systems**:
 - **CAD** - Electrical (Altium, OrCAD), Mechanical (SolidWorks, Fusion 360)
@@ -204,18 +210,19 @@ Break down silos with integrated tools [page:89]:
 - **CRM** - Customer Relationship Management
 - **Version Control** - Git for firmware, PLM for hardware designs
 
-**Why It Matters**: Engineers in silos miss critical information, increasing costs and risk of unmainturable designs.
+**Why It Matters**: Engineers in silos miss critical information, increasing costs and risk of unmaintainable designs.
 
 ### 9. Develop a Resilient Supply Chain
 
-Avoid the "designing for prototype" trap [page:89]:
+Avoid the "designing for prototype" trap [web:89]:
 
 **Supply Chain Best Practices**:
 - **Use standard, short lead-time parts** - Avoid custom/exotic components
 - **Dual-source critical components** - Especially >8 week lead times
 - **Stabilize design before scaling** - Minimize ECOs during ramp
-- **Understand market location and tariffs** - Factor into cost model
+- **Understand market location and tariffs** - Factor EU customs, VAT, import duties into cost model
 - **Manage suppliers strategically** - Regular check-ins, performance tracking
+- **Consider European suppliers** - Reduce shipping times and customs complexity for Italian/EU market
 
 **Common Pitfalls**:
 - Parts not available when scaling to volume
@@ -225,7 +232,7 @@ Avoid the "designing for prototype" trap [page:89]:
 
 ### 10. Verify Readiness for Volume Manufacturing
 
-Follow phase-gate process rigorously [page:89]:
+Follow phase-gate process rigorously [web:89]:
 
 **Why Phase Gates Matter**:
 - Costs for mistakes escalate rapidly: Feasibility → Prototype → Pilot → Production
@@ -246,7 +253,7 @@ Follow phase-gate process rigorously [page:89]:
 
 ## Communication Best Practices
 
-Effective communication is critical in hardware projects due to cross-functional complexity [page:88].
+Effective communication is critical in hardware projects due to cross-functional complexity [web:88].
 
 ### Team Synchronization Meetings
 
@@ -263,7 +270,7 @@ Effective communication is critical in hardware projects due to cross-functional
 
 ### Meeting Efficiency Tips
 
-**Keep Meetings Short** [page:88]:
+**Keep Meetings Short** [web:88]:
 - Limit to 20-30 minutes by breaking problems into smaller parts
 - Long meetings (2+ hours) kill productivity for the rest of the day
 
@@ -280,7 +287,7 @@ Effective communication is critical in hardware projects due to cross-functional
 
 ### Documentation Management
 
-**Cloud-Based Version Control** [page:88]:
+**Cloud-Based Version Control** [web:88]:
 - Store schematics, PCBs, CAD files online (not local computers)
 - Single source of truth accessible to all team members
 - Automatic versioning and change logging
@@ -296,7 +303,7 @@ Effective communication is critical in hardware projects due to cross-functional
 
 ## Digital Transformation for Hardware Teams
 
-Modern hardware development requires integrated, cloud-based tools [page:88].
+Modern hardware development requires integrated, cloud-based tools [web:88].
 
 ### Core Activities
 
@@ -449,4 +456,4 @@ Found this guide helpful? Have suggestions for improvement?
 
 ---
 
-*"Work smart, not hard"—reduce wasted time and seek synergy within your working environment.* [page:88]
+*"Work smart, not hard"—reduce wasted time and seek synergy within your working environment.* [web:88]
