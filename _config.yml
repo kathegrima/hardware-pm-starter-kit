@@ -1,1 +1,46 @@
+# Hardware PM Starter Kit - GitHub Pages Configuration
 
+# Site Settings
+title: "Hardware PM Starter Kit"
+description: "Comprehensive templates and guides for hardware product managers"
+author: "KatheGrima"
+baseurl: "/hardware-pm-starter-kit"
+url: "https://kathegrima.github.io"
+
+# Theme Selection (Cayman = clean, professional, great for docs)
+theme: jekyll-theme-cayman
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub Flavored Markdown
+  syntax_highlighter: rouge
+
+# Plugins (GitHub Pages supports these by default)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections (organize your content)
+collections:
+  guides:
+    output: true
+    permalink: /guides/:name
+  templates:
+    output: true
+    permalink: /templates/:name
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .git
+  - .github
+
+# SEO and Social
+github_username: kathegrima
+repository: kathegrima/hardware-pm-starter-kit
