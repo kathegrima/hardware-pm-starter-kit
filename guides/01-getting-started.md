@@ -108,7 +108,7 @@ Engineering Validation Testing is the first major milestone where your prototype
 - I/O interface testing
 - Multiple iterations to eliminate design flaws
 
-**Prototype Quantities**: 3-50 units (average: 5-12 prototypes)
+**Prototype Quantities**: 5-50 units (typical: 10-20 units for effective testing across disciplines)
 
 **Technologies Used**: 3D printing, laser cut/milled PCBs, soft tooling (silicon molds), professional hardware development kits (HDK), rapidly cut/milled parts
 
