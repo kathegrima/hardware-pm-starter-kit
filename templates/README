@@ -1,0 +1,228 @@
+from pathlib import Path
+
+# Create README for templates folder with glossary and bibliography
+templates_readme = """# Templates - Quick Reference
+
+> **Purpose**: Hardware project management templates with industry-standard terminology and references
+
+---
+
+## Available Templates
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [project-charter-hardware.md](./project-charter-hardware.md) | Define project scope, objectives, and constraints | Project kickoff |
+| [risk-register-hardware.md](./risk-register-hardware.md) | Track and mitigate hardware-specific risks | Throughout project lifecycle |
+| [phase-gate-checklist.md](./phase-gate-checklist.md) | Exit criteria for each development phase | Gate reviews (Concept → EVT → DVT → PVT → Production) |
+| [sprint-planning-hardware.md](./sprint-planning-hardware.md) | Plan hardware sprints with lead-time tracking | Sprint planning (every 4-8 weeks) |
+| [lessons-learned-template.md](./lessons-learned-template.md) | Capture insights for continuous improvement | Project completion or major milestones |
+
+---
+
+## Glossary of Terms & Acronyms
+
+### Development Phases
+
+| Term | Full Name | Description |
+|------|-----------|-------------|
+| **POC** | Proof of Concept | Initial feasibility demonstration |
+| **EVT** | Engineering Validation Test | First functional prototypes (100-1K units) |
+| **DVT** | Design Validation Test | Production-intent design validation (300-2K units) |
+| **PVT** | Production Validation Test | Manufacturing process validation (1K-20K units) |
+| **MP** | Mass Production | Volume production and shipment to customers |
+
+### Project Management
+
+| Term | Full Name | Description |
+|------|-----------|-------------|
+| **PM** | Project Manager | Person responsible for project coordination |
+| **BOM** | Bill of Materials | List of components with part numbers and costs |
+| **ECO** | Engineering Change Order | Formal process to modify design after freeze |
+| **PRD** | Product Requirements Document | Detailed product specifications and requirements |
+| **NRE** | Non-Recurring Engineering | One-time costs (tooling, prototypes, certification) |
+| **MTBF** | Mean Time Between Failures | Reliability metric for product longevity |
+| **DPMO** | Defects Per Million Opportunities | Quality metric for manufacturing |
+| **NPS** | Net Promoter Score | Customer satisfaction metric (-100 to +100) |
+
+### Manufacturing & Quality
+
+| Term | Full Name | Description |
+|------|-----------|-------------|
+| **CM** | Contract Manufacturer | Third-party manufacturing partner |
+| **DFM** | Design for Manufacturing | Design practices to improve manufacturability |
+| **DFMA** | Design for Manufacturing and Assembly | Combined design optimization approach |
+| **DFT** | Design for Test | Design practices to enable effective testing |
+| **IQC** | Incoming Quality Control | Inspection of received components |
+| **IPQC** | In-Process Quality Control | Quality checks during assembly |
+| **FQC** | Final Quality Control | Final inspection before shipment |
+| **FAI** | First Article Inspection | Verification of first production parts |
+| **SPC** | Statistical Process Control | Statistical methods for process monitoring |
+| **Cpk** | Process Capability Index | Measure of process variation (target >1.33) |
+| **RMA** | Return Merchandise Authorization | Process for handling customer returns |
+
+### Supply Chain
+
+| Term | Full Name | Description |
+|------|-----------|-------------|
+| **EOL** | End of Life | Component discontinued by manufacturer |
+| **MOQ** | Minimum Order Quantity | Smallest quantity supplier will sell |
+| **LT** | Lead Time | Time from order to delivery |
+| **JIT** | Just in Time | Inventory strategy minimizing stock |
+| **PO** | Purchase Order | Formal order document to supplier |
+
+### Testing & Compliance
+
+| Term | Full Name | Description |
+|------|-----------|-------------|
+| **EMI** | Electromagnetic Interference | Unwanted electromagnetic emissions |
+| **EMC** | Electromagnetic Compatibility | Ability to operate without causing/suffering EMI |
+| **ESD** | Electrostatic Discharge | Static electricity that can damage electronics |
+| **RoHS** | Restriction of Hazardous Substances | EU directive limiting toxic materials |
+| **REACH** | Registration, Evaluation, Authorization of Chemicals | EU chemical regulation |
+| **IP** | Ingress Protection | Rating for dust/water resistance (e.g., IP54) |
+| **UL** | Underwriters Laboratories | Safety certification organization |
+| **CE** | Conformité Européenne | European conformity marking |
+| **FCC** | Federal Communications Commission | US regulatory agency for RF devices |
+| **ITAR** | International Traffic in Arms Regulations | US export control for defense items |
+| **EAR** | Export Administration Regulations | US export control for dual-use items |
+
+### Technical
+
+| Term | Full Name | Description |
+|------|-----------|-------------|
+| **PCB** | Printed Circuit Board | Board with electrical circuits |
+| **MCU** | Microcontroller Unit | Integrated circuit with CPU, memory, I/O |
+| **IC** | Integrated Circuit | Electronic circuit on semiconductor chip |
+| **RTOS** | Real-Time Operating System | OS with guaranteed response times |
+| **OTA** | Over-The-Air | Remote firmware update capability |
+| **CFD** | Computational Fluid Dynamics | Thermal/airflow simulation |
+| **DRC** | Design Rule Check | Automated verification of PCB design |
+| **FMEA** | Failure Mode and Effect Analysis | Systematic risk analysis method |
+| **PID** | Proportional-Integral-Derivative | Control algorithm for closed-loop systems |
+
+### Agile & Scrum
+
+| Term | Full Name | Description |
+|------|-----------|-------------|
+| **DoD** | Definition of Done | Criteria for completing a user story |
+| **MVP** | Minimum Viable Product | Product with minimum features for launch |
+| **EFFA** | Early Field Failure Analysis | Analysis of first customer failures |
+
+---
+
+## Bibliography & References
+
+### Industry Standards & Guidelines
+
+1. **Stage-Gate Process for Hardware Development**
+   - Cooper, R.G. (2008). "Perspective: The Stage-Gate® Idea-to-Launch Process"
+   - Source: Product Development Institute
+   - [Stage-Gate Process Guide](https://www.stage-gate.com/)
+
+2. **EVT, DVT, PVT Best Practices**
+   - Instrumental. (2024). "EVT, DVT, PVT Stage Gate Definitions"
+   - [Instrumental Build Better Handbook](https://instrumental.com/build-better-handbook/evt-dvt-pvt)
+
+3. **Hardware Product Development Stages**
+   - EnCata. (2023). "Overview of Hardware Product Development Stages: POC – EVT – DVT – PVT"
+   - [EnCata Blog](https://www.encata.net/blog/)
+
+4. **Phase Gate Approach to Hardware Products**
+   - Wevolver. (2021). "The Complete Guide to The Phase Gate Approach to Developing a Hardware Product"
+   - [Wevolver Article](https://www.wevolver.com/article/phase-gate-approach-hardware-product)
+
+### Agile for Hardware
+
+5. **Agile Hardware Development with Scrum**
+   - Veber, S. (2024). "Agile Hardware Development with Scrum"
+   - LinkedIn Article on applying Scrum to hardware projects
+
+6. **Six Tips to Apply Scrum in Hardware Development**
+   - Yu, S. & Joseph. (2021). "Six Tips to Apply Scrum in the Hardware Development"
+   - LinkedIn Article on hardware Agile practices
+
+7. **Agile Processes for Hardware Development**
+   - cPrime. (2015). "Agile Processes for Hardware Development"
+   - White paper on adapting Agile methodologies for hardware
+
+### Risk Management
+
+8. **Hardware Development Risk Management**
+   - PRG NPI. "Managing Hardware Development Risk: 7 Best Practices"
+   - [PRG NPI Article](https://prgnpi.com/managing-hardware-development-risk-7-best-practices/)
+
+9. **Supply Chain Risk Management**
+   - Compliance Forge. (2025). "Cybersecurity Supply Chain Risk Management Templates"
+   - NIST Framework-based risk management practices
+
+10. **Hardware Risk Register Best Practices**
+    - ClickUp. (2025). "Hardware Designers Risk Register Template"
+    - [ClickUp Templates](https://clickup.com/templates/risk-register/hardware-designers)
+
+### Project Management
+
+11. **Lessons Learned Best Practices**
+    - PMO365. (2025). "Lessons Learned Template: The Key to Continuous Improvement"
+    - [PMO365 Blog](https://pmo365.com/blog/lessons-learned-template)
+
+12. **Project Retrospective Templates**
+    - ClickUp. (2025). "10 Project Retrospective Templates for Productive Feedback"
+    - [ClickUp Blog](https://clickup.com/blog/project-retrospective-templates/)
+
+13. **Post-Mortem Culture**
+    - Google SRE. (2016). "Postmortem Culture: Learning from Failure"
+    - [Google SRE Book](https://sre.google/sre-book/postmortem-culture/)
+
+### Hardware vs Software PM
+
+14. **Core Differences: Hardware vs Software Project Management**
+    - Intech House. (2025). "Core Differences in Project Management Between Hardware and Software Projects"
+    - [Intech House Blog](https://intechhouse.com/blog/hardware-vs-software-project-management/)
+
+15. **Software vs Hardware Product Management**
+    - GeeksforGeeks. (2024). "Software Product Management vs Hardware Product Management"
+    - Comparison of methodologies and approaches
+
+### Testing & Compliance
+
+16. **EVT, DVT & PVT for Consumer Electronics**
+    - KD Product Development. (2024). "EVT, DVT & PVT Demystified for Consumer Electronics Startups"
+    - [KD Product Dev Blog](https://www.kdproductdev.com/blog/evt-dvt-pvt-demystified/)
+
+17. **Validation Testing in Product Development**
+    - Formlabs. (2021). "Validation Testing in Product Development: From POC to EVT, DVT, PVT, MP"
+    - [Formlabs Blog](https://formlabs.com/blog/validation-testing-product-development/)
+
+18. **Hardware Design Review Checklist**
+    - Various industry sources including Scribd and HilPCB
+    - PCB design review best practices
+
+---
+
+## Related Resources
+
+### Open Source Hardware Documentation
+
+- [Open Hardware Documentation Template by SanliFaez](https://github.com/SanliFaez/Open-Hardware-Documentation-Template)
+- [FracktalWorks Hardware Project Documentation Template](https://github.com/FracktalWorks/Project-Documentation-Template)
+- [Open Make Hardware Template Guide](https://github.com/open-make/RHardware-minimaltemplate)
+
+### Tools & Software
+
+- **Project Management**: Jira, Azure DevOps, Asana, Monday.com
+- **Documentation**: Confluence, Notion, GitHub Wiki
+- **CAD**: SolidWorks, Fusion 360, Altium Designer, KiCAD
+- **Simulation**: ANSYS, COMSOL (thermal/mechanical), LTSpice (electrical)
+- **Version Control**: Git, SVN, Perforce
+
+---
+
+## Template Customization
+
+These templates are designed to be customized for your specific project needs:
+
+1. **Replace placeholders** in square brackets `[PROJECT_NAME]`, `[DATE]`, etc.
+2. **Add/remove sections** based on project complexity
+3. **Adjust story point scale** in sprint planning to match your team's velocity
+4. **Modify risk categories** to reflect your product domain (consumer, industrial, medical, etc.)
+5. **Customize phase gates** if u
