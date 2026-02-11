@@ -318,11 +318,11 @@ Free to use, modify, and distribute for commercial or personal projects.
 ## Support
 
 For questions or feedback:
-- **GitHub Issues**: [Create an issue](https://github.com/[username]/hardware-pm-starter-kit/issues)
-- **Discussions**: [Join the discussion](https://github.com/[username]/hardware-pm-starter-kit/discussions)
+- **GitHub Issues**: [Create an issue](https://github.com/kathegrima/hardware-pm-starter-kit/issues)
+- **Discussions**: [Join the discussion](https://github.com/kathegrima/hardware-pm-starter-kit/discussions)
 
 ---
 
 **Template Version**: v1.0  
 **Last Updated**: February 2026  
-**Maintained by**: [Your Organization/Name]
+**Maintained by**: KatheGrima
