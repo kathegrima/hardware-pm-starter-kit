@@ -1,0 +1,10 @@
+Line #,Category,Designator,Qty,Part Number,MPN,Description,Manufacturer,Supplier,Unit Cost,Ext Cost,Lead Time (weeks),Lifecycle,RoHS,Second Source MPN,Supplier 2,MOQ,Package,Datasheet URL,REACH SVHC,Country of Origin,Notes
+1,PCB,-,1,PCB-001,,"Main PCB 4-layer FR4","[PCB Fab]","[PCB Supplier]",8.50,8.50,2,Active,Yes,,,[10],"-",,,"100x80mm, ENIG finish"
+2,IC,U1,1,IC-001,STM32F407VGT6,"MCU ARM Cortex-M4 168MHz 1MB Flash LQFP100","STMicroelectronics","Mouser",7.85,7.85,12,Active,Yes,,"Digi-Key",1,LQFP100,https://www.st.com/resource/en/datasheet/stm32f407vg.pdf,None,,"Primary MCU"
+3,Sensor,U2,1,SEN-001,SCD40,"CO2 Sensor Module 400-5000ppm","Sensirion","Digi-Key",38.00,38.00,16,Active,Yes,,"Mouser",1,Module,https://sensirion.com/media/documents/33C8C327/616B3AB7/Sensirion_CO2_Sensors_SCD40_Datasheet.pdf,None,,"Long lead time – order early"
+4,Resistor,"R1-R10",10,RES-10K-001,RC0603FR-0710KL,"Resistor 10kΩ 1% 0603","Yageo","LCSC",0.01,0.10,2,Active,Yes,ERJ-3EKF1002V,"Digi-Key",100,0603,https://www.yageo.com/upload/media/product/passive_component/resistor/chip_resistor/RR_2_01_RC_Group.pdf,None,,"Standard 10k pull-up"
+5,Capacitor,"C1-C5",5,CAP-100N-001,CL10B104KB8NNNC,"Capacitor 100nF 50V X7R 0603","Samsung","LCSC",0.02,0.10,2,Active,Yes,,,"100",0603,https://product.samsungsem.com/mlcc,Under Review,,"Decoupling capacitor"
+6,Connector,J1,1,CON-USB-001,USB-MICRO-B-01,"USB Micro-B Receptacle","Amphenol","Mouser",0.45,0.45,8,Active,Yes,,,"10",SMT,https://www.amphenol.com, None,,"USB power/programming"
+7,Mechanical,-,4,MECH-SCREW-001,SCREW-M2.5-06,"Screw M2.5x6mm pan head","Generic","Local Supplier",0.03,0.12,1,Active,Yes,,,"100",M2.5,,"",,"Enclosure assembly screws"
+8,Battery,BAT1,1,BATT-18650-001,INR18650-25R,"Li-ion 18650 Cell 2500mAh","Samsung SDI","Authorized Distributor",3.50,3.50,10,Active,Yes,,,"50",18650,,"Contains Li-ion","", "Check UN38.3 requirements"
+9,Packaging,-,1,PKG-BOX-001,BOX-SMALL-01,"Retail Box, Small","Custom","Packaging Supplier",1.20,1.20,4,Active,Yes,,,"500","-",,"",,"Printed retail box"
