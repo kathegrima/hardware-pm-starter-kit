@@ -49,7 +49,7 @@ Choose your path:
 
 - [Getting Started](guides/01-getting-started.md) - Hardware PM fundamentals
 - [Customization Guide](guides/02-customization-guide.md) - Industry-specific adaptations
-- [Phase Gate Deep Dive](guides/03-phase-gate-guide.md) - EVT → DVT → PVT → MP methodology
+- [Phase Gate Deep Dive](guides/03-phase-gate-guide.md) - EVT to DVT to PVT to MP methodology
 - [Risk Management](guides/04-risk-management-guide.md) - Hardware-specific risk framework
 - [EU Compliance Guide](guides/05-compliance-guide-eu.md) - CE marking, RoHS, WEEE, RED, MDR
 
@@ -76,13 +76,7 @@ Choose your path:
 
 ## 🏭 The Hardware Development Lifecycle
 
-```
-Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-Life
-   ↓       ↓      ↓      ↓          ↓              ↓            ↓
-  Idea  Prototype Valid Design  Validate  Volume Mfg    Support   Disposal
-                              Production
-```
-
+**Standard Phase Flow**: Concept > EVT > DVT > PVT > Mass Production > Maintenance > End-of-Life
 
 | Phase | Duration | Purpose | Key Deliverables |
 |-------|----------|---------|------------------|
@@ -184,7 +178,7 @@ Found ways to improve these templates? Contributions welcome!
 **Planned**:
 - Video tutorials for key workflows
 - Excel/Google Sheets versions
-- Cost calculators (BOM → COGS)
+- Cost calculators (BOM to COGS)
 - US compliance guide (FCC, UL, FDA)
 - More industry case studies
 
