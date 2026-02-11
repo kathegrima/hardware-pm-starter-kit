@@ -1,11 +1,11 @@
-# 🛡️ Hardware Risk Register
+# Hardware Risk Register
 
 > **Purpose**: Track and mitigate risks specific to hardware product development  
 > **Review**: Weekly at sprint planning + Phase gate reviews
 
 ---
 
-## 📋 Quick Guide
+## Quick Guide
 
 **Risk Score** = Impact (1-5) × Likelihood (1-5)
 
@@ -18,7 +18,7 @@
 
 ---
 
-## 📊 Project Info
+## Project Info
 
 - **Project**: `[PROJECT_NAME]`
 - **PM**: `[PM_NAME]`
@@ -27,7 +27,7 @@
 
 ---
 
-## 🔢 Risk Assessment Scale
+## Risk Assessment Scale
 
 <details>
 <summary><b>Click to expand Impact & Likelihood definitions</b></summary>
@@ -36,21 +36,21 @@
 
 | Score | Level | Description |
 |:-----:|-------|-------------|
-| 5️⃣ | **Critical** | Project failure, product recall, >50% budget overrun, >3mo delay, safety hazard |
-| 4️⃣ | **High** | Major feature cut, 30-50% budget overrun, 1-3mo delay, compliance failure |
-| 3️⃣ | **Medium** | Performance degraded, 15-30% budget overrun, 2-4wk delay, workaround needed |
-| 2️⃣ | **Low** | Minor inconvenience, <15% budget impact, <2wk delay, cosmetic issues |
-| 1️⃣ | **Minimal** | Negligible impact, absorbed within contingency |
+| 5 | **Critical** | Project failure, product recall, >50% budget overrun, >3mo delay, safety hazard |
+| 4 | **High** | Major feature cut, 30-50% budget overrun, 1-3mo delay, compliance failure |
+| 3 | **Medium** | Performance degraded, 15-30% budget overrun, 2-4wk delay, workaround needed |
+| 2 | **Low** | Minor inconvenience, <15% budget impact, <2wk delay, cosmetic issues |
+| 1 | **Minimal** | Negligible impact, absorbed within contingency |
 
 ### Likelihood Scale (1-5)
 
 | Score | Level | Probability |
 |:-----:|-------|-------------|
-| 5️⃣ | **Almost Certain** | >70% - Expected to occur |
-| 4️⃣ | **Likely** | 50-70% - Will probably occur |
-| 3️⃣ | **Possible** | 30-50% - Might occur |
-| 2️⃣ | **Unlikely** | 10-30% - Probably won't occur |
-| 1️⃣ | **Rare** | <10% - Highly unlikely |
+| 5 | **Almost Certain** | >70% - Expected to occur |
+| 4 | **Likely** | 50-70% - Will probably occur |
+| 3 | **Possible** | 30-50% - Might occur |
+| 2 | **Unlikely** | 10-30% - Probably won't occur |
+| 1 | **Rare** | <10% - Highly unlikely |
 
 ### Risk Priority Matrix
 
@@ -70,7 +70,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 📦 1. Supply Chain Risks
+## 1. Supply Chain Risks
 
 | ID | Risk | I | L | Score | Status | Mitigation | Owner |
 |----|------|:-:|:-:|:-----:|:------:|------------|-------|
@@ -92,7 +92,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## ⚙️ 2. Technical Risks - Hardware
+## 2. Technical Risks - Hardware
 
 | ID | Risk | I | L | Score | Status | Mitigation | Owner |
 |----|------|:-:|:-:|:-----:|:------:|------------|-------|
@@ -105,7 +105,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 💻 3. Technical Risks - Firmware
+## 3. Technical Risks - Firmware
 
 | ID | Risk | I | L | Score | Status | Mitigation | Owner |
 |----|------|:-:|:-:|:-----:|:------:|------------|-------|
@@ -115,7 +115,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 🏭 4. Manufacturing Risks
+## 4. Manufacturing Risks
 
 | ID | Risk | I | L | Score | Status | Mitigation | Owner |
 |----|------|:-:|:-:|:-----:|:------:|------------|-------|
@@ -127,7 +127,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 🔒 5. Compliance & Regulatory
+## 5. Compliance & Regulatory
 
 | ID | Risk | I | L | Score | Status | Mitigation | Owner |
 |----|------|:-:|:-:|:-----:|:------:|------------|-------|
@@ -139,7 +139,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 📈 6. Market & Business
+## 6. Market & Business
 
 | ID | Risk | I | L | Score | Status | Mitigation | Owner |
 |----|------|:-:|:-:|:-----:|:------:|------------|-------|
@@ -149,7 +149,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 👥 7. Project Management
+## 7. Project Management
 
 | ID | Risk | I | L | Score | Status | Mitigation | Owner |
 |----|------|:-:|:-:|:-----:|:------:|------------|-------|
@@ -159,7 +159,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 📊 Risk Summary
+## Risk Summary
 
 ### By Priority
 
@@ -187,9 +187,9 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 💡 Best Practices
+## Best Practices
 
-### 🔄 Risk Review Cadence
+### Risk Review Cadence
 
 | Frequency | Scope | Participants |
 |-----------|-------|--------------|
@@ -198,7 +198,7 @@ IMPACT   1    2    3    4    5
 | **Bi-weekly** | Risk register update | Cross-functional review |
 | **Phase Gates** | Complete assessment | Stakeholders + leadership |
 
-### 🎯 Mitigation Strategies
+### Mitigation Strategies
 
 | Strategy | When to Use | Example |
 |----------|-------------|---------|
@@ -207,14 +207,14 @@ IMPACT   1    2    3    4    5
 | **Transfer** | Shift to another party | Insurance, supplier warranties, outsourcing |
 | **Accept** | Score acceptable | Monitor with contingency plan |
 
-### 📅 Phase-Specific Focus
+### Phase-Specific Focus
 
 - **Concept**: Technical feasibility, market validation
 - **EVT**: Component availability, thermal/power, HW/SW integration
 - **DVT**: Compliance testing, manufacturing yield, BOM cost
 - **PVT**: Production capacity, test coverage, quality metrics
 
-### 🔍 Risk Identification Sources
+### Risk Identification Sources
 
 - FMEA (Failure Mode and Effect Analysis)
 - Design reviews and technical discussions
@@ -224,7 +224,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 📝 Status Definitions
+## Status Definitions
 
 | Icon | Status | Description | Action |
 |:----:|--------|-------------|--------|
@@ -236,7 +236,7 @@ IMPACT   1    2    3    4    5
 
 ---
 
-## 📌 Quick Actions
+## Quick Actions
 
 ### Adding a New Risk
 
@@ -249,7 +249,9 @@ IMPACT   1    2    3    4    5
 
 ### Escalating a Risk
 
-When risk score ≥ 15 or status changes to 🔴:
+> [!WARNING]
+> When risk score ≥ 15 or status changes to 🔴:
+
 1. Alert PM and executive sponsor immediately
 2. Schedule mitigation review within 24 hours
 3. Allocate additional resources if needed
@@ -257,7 +259,10 @@ When risk score ≥ 15 or status changes to 🔴:
 
 ---
 
-## 📋 Notes & Lessons Learned
+## Notes & Lessons Learned
+
+> [!NOTE]
+> Use this section to capture key insights and improve future risk management
 
 ### Key Insights
 *[Document patterns, surprises, and recurring themes]*
@@ -270,13 +275,14 @@ When risk score ≥ 15 or status changes to 🔴:
 
 ---
 
-**📄 Document Version**: 1.0  
-**🏷️ Template**: hardware-pm-starter-kit v1.0  
-**📅 Last Review**: 10/02/26  
+**Document Version**: 1.0  
+**Template**: hardware-pm-starter-kit v1.0  
+**Last Review**: `[DATE]`  
+**Next Review**: `[DATE]`
 
 ---
 
-## 🔗 Related Templates
+## Related Templates
 
 - [Project Charter](./project-charter-hardware.md) - Project scope and constraints
 - [Phase Gate Checklist](./phase-gate-checklist.md) - Gate review criteria
