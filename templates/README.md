@@ -251,11 +251,12 @@
 
 ### For New Projects
 
-1. **Start**: [Project Charter](./project-charter-hardware.md) - Define scope and objectives
-2. **Plan**: [Sprint Planning](./sprint-planning-hardware.md) - Plan first sprint
-3. **Track**: [Risk Register](./risk-register-hardware.md) - Identify and track risks
-4. **Review**: [Phase Gate Checklist](./phase-gate-checklist.md) - Prepare for gate reviews
-5. **Improve**: [Lessons Learned](./lessons-learned-template.md) - Capture insights at completion
+1. **Start**: [Project Charter](./01-project-charter.md) - Define scope and objectives
+2. **Plan**: [Sprint Planning](./04-sprint-planning.md) - Plan first sprint
+3. **Track**: [Risk Register](./02-risk-register.md) - Identify and track risks
+4. **Review**: [Phase Gate Checklist](./03-phase-gate-checklist.md) - Prepare for gate reviews
+5. **Improve**: [Lessons Learned](./05-lessons-learned.md) - Capture insights at completion
+
 
 ### For Ongoing Projects
 
