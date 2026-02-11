@@ -129,8 +129,13 @@ Hardware projects have **unique risk characteristics** compared to software:
 - **EOL (End of Life)**: Manufacturer discontinues component
 - **NRND (Not Recommended for New Designs)**: EOL warning
 - **Allocation**: Supplier limits quantities to certain customers
-- **Lead Time Extension**: 8-week component now 20-week lead time
+- **Lead Time Extension**: Component lead times remain volatile post-pandemic
+  - Standard passives: 4-12 weeks (vs pre-2020: 2-4 weeks)
+  - ICs/MCUs: 16-52 weeks (vs pre-2020: 8-16 weeks)
+  - Custom components: 16-24 weeks (vs pre-2020: 8-12 weeks)
 - **Single Source**: Only one supplier for critical component
+- **Allocation Risk**: Semiconductor manufacturers prioritize high-volume customers (automotive, industrial)
+- **Mitigation**: Order long-lead components at EVT phase, maintain 6-12 month inventory buffer
 
 **Supplier Risks**:
 - Supplier capacity constraints (can't meet volume)
