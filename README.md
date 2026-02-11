@@ -7,7 +7,6 @@ title: Home
 
 > **Comprehensive templates and guides for hardware product managers** navigating from concept to mass production
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Issues](https://img.shields.io/github/issues/kathegrima/hardware-pm-starter-kit)](https://github.com/kathegrima/hardware-pm-starter-kit/issues)
 
 ---
