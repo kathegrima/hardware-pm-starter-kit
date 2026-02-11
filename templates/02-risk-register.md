@@ -5,6 +5,10 @@
 
 ---
 
+**Navigation**: [🏠 Home](../) | [📋 All Templates](../templates/) | [📚 All Guides](../guides/)
+
+---
+
 ## Quick Guide
 
 **Risk Score** = Impact (1-5) × Likelihood (1-5)
