@@ -1,230 +1,284 @@
-# Hardware Risk Register
+# 🛡️ Hardware Risk Register
 
-> **Purpose**: Systematic identification, assessment, and mitigation of risks specific to hardware product development
-
-## How to Use This Template
-
-1. **Identify risks** across all categories during project kickoff and continuously throughout development
-2. **Assess** each risk using the Impact/Likelihood matrix below
-3. **Calculate Risk Score** = Impact × Likelihood (scale 1-25)
-4. **Prioritize** mitigation efforts: Critical (15-25) → High (10-14) → Medium (5-9) → Low (1-4)
-5. **Review** regularly at sprint planning, phase gates, and team retrospectives
-6. **Update status** as risks evolve or are mitigated
+> **Purpose**: Track and mitigate risks specific to hardware product development  
+> **Review**: Weekly at sprint planning + Phase gate reviews
 
 ---
 
-## Risk Assessment Scale
+## 📋 Quick Guide
 
-### Impact (1-5)
+**Risk Score** = Impact (1-5) × Likelihood (1-5)
+
+| Priority | Score Range | Action |
+|----------|-------------|--------|
+| 🔴 **Critical** | 15-25 | Immediate action required |
+| 🟠 **High** | 10-14 | Active mitigation in progress |
+| 🟡 **Medium** | 5-9 | Monitor and plan mitigation |
+| 🟢 **Low** | 1-4 | Accept and monitor |
+
+---
+
+## 📊 Project Info
+
+- **Project**: `[PROJECT_NAME]`
+- **PM**: `[PM_NAME]`
+- **Last Update**: `[DATE]`
+- **Next Review**: `[DATE]`
+
+---
+
+## 🔢 Risk Assessment Scale
+
+<details>
+<summary><b>Click to expand Impact & Likelihood definitions</b></summary>
+
+### Impact Scale (1-5)
+
 | Score | Level | Description |
-|-------|-------|-------------|
-| 5 | Critical | Project failure, product recall, >50% budget overrun, >3 month delay, safety hazard |
-| 4 | High | Major feature cut, 30-50% budget overrun, 1-3 month delay, compliance failure |
-| 3 | Medium | Performance degradation, 15-30% budget overrun, 2-4 week delay, requires workaround |
-| 2 | Low | Minor inconvenience, <15% budget impact, <2 week delay, cosmetic issues |
-| 1 | Minimal | Negligible impact, absorbed within contingency, no delay |
+|:-----:|-------|-------------|
+| 5️⃣ | **Critical** | Project failure, product recall, >50% budget overrun, >3mo delay, safety hazard |
+| 4️⃣ | **High** | Major feature cut, 30-50% budget overrun, 1-3mo delay, compliance failure |
+| 3️⃣ | **Medium** | Performance degraded, 15-30% budget overrun, 2-4wk delay, workaround needed |
+| 2️⃣ | **Low** | Minor inconvenience, <15% budget impact, <2wk delay, cosmetic issues |
+| 1️⃣ | **Minimal** | Negligible impact, absorbed within contingency |
 
-### Likelihood (1-5)
+### Likelihood Scale (1-5)
+
 | Score | Level | Probability |
-|-------|-------|-------------|
-| 5 | Almost Certain | >70% - Expected to occur |
-| 4 | Likely | 50-70% - Probably will occur |
-| 3 | Possible | 30-50% - Might occur |
-| 2 | Unlikely | 10-30% - Probably won't occur |
-| 1 | Rare | <10% - Highly unlikely |
+|:-----:|-------|-------------|
+| 5️⃣ | **Almost Certain** | >70% - Expected to occur |
+| 4️⃣ | **Likely** | 50-70% - Will probably occur |
+| 3️⃣ | **Possible** | 30-50% - Might occur |
+| 2️⃣ | **Unlikely** | 10-30% - Probably won't occur |
+| 1️⃣ | **Rare** | <10% - Highly unlikely |
 
-### Risk Score Matrix
+### Risk Priority Matrix
+
 ```
          LIKELIHOOD →
 IMPACT   1    2    3    4    5
   ↓    ┌─────────────────────────┐
-  5    │ 5   10   15   20   25  │
-  4    │ 4    8   12   16   20  │
-  3    │ 3    6    9   12   15  │
-  2    │ 2    4    6    8   10  │
-  1    │ 1    2    3    4    5   │
+  5    │ 🟢  🟡  🟠  🔴  🔴  │
+  4    │ 🟢  🟡  🟡  🟠  🔴  │
+  3    │ 🟢  🟡  🟡  🟡  🟠  │
+  2    │ 🟢  🟢  🟡  🟡  🟡  │
+  1    │ 🟢  🟢  🟢  🟢  🟢  │
        └─────────────────────────┘
-
-Critical: 15-25  |  High: 10-14  |  Medium: 5-9  |  Low: 1-4
 ```
 
----
-
-## Project Metadata
-- **Project Name**: [PROJECT_NAME]
-- **Last Updated**: [DATE]
-- **Risk Owner**: [PM_NAME]
-- **Review Frequency**: [e.g., Weekly at sprint planning + Phase gate reviews]
+</details>
 
 ---
 
-## Risk Categories
+## 📦 1. Supply Chain Risks
 
-## 1. Supply Chain Risks
+| ID | Risk | I | L | Score | Status | Mitigation | Owner |
+|----|------|:-:|:-:|:-----:|:------:|------------|-------|
+| **SC-001** | **Component EOL announced** mid-project (e.g., MCU) | 5 | 3 | **15** 🟠 | 🟡 Active | • 2nd source alternatives<br>• 6mo buffer stock<br>• Pin-compatible family | `[Name]` |
+| **SC-002** | **Extended lead time** (8→16 weeks) | 4 | 4 | **16** 🔴 | 🟡 Active | • Dual-source qualification<br>• Early procurement<br>• Alternative specs | `[Name]` |
+| **SC-003** | **Battery price surge** >30% | 3 | 3 | **9** 🟡 | 🟡 Active | • 12mo price lock-in<br>• Alternative chemistries<br>• 20% BOM contingency | `[Name]` |
+| **SC-004** | **Single-source connector** | 5 | 2 | **10** 🟠 | 🟡 Active | • Standard alternative<br>• Extended supply agreement<br>• 12mo inventory | `[Name]` |
+| **SC-005** | **PCB fab yield** drops <90% | 4 | 2 | **8** 🟡 | 🟢 Mitigated | • 2nd fab qualified<br>• Incoming QC<br>• Supplier SPC data | `[Name]` |
+| **SC-006** | **Geopolitical supply disruption** | 4 | 3 | **12** 🟠 | 🟡 Active | • Diversify geography<br>• Policy monitoring<br>• Strategic inventory | `[Name]` |
 
-| ID | Risk Description | Impact | Likelihood | Score | Status | Mitigation Strategy | Owner | Target Date |
-|----|------------------|--------|------------|-------|--------|---------------------|-------|-------------|
-| SC-001 | **Component Obsolescence**: Key IC (e.g., MCU) announced EOL mid-development | 5 | 3 | 15 | 🟡 Active | • Identify 2nd source alternatives<br>• Secure 6-month buffer stock<br>• Design with pin-compatible family | [Name] | [Date] |
-| SC-002 | **Extended Lead Time**: Critical motor supplier extends lead time from 8 to 16 weeks | 4 | 4 | 16 | 🟡 Active | • Dual-source qualification<br>• Early procurement (advance orders)<br>• Alternative motor specs evaluation | [Name] | [Date] |
-| SC-003 | **Price Volatility**: Battery cell price increases >30% due to commodity shortage | 3 | 3 | 9 | 🟡 Active | • Lock-in pricing for 12 months<br>• Explore alternative chemistries<br>• Increase BOM contingency to 20% | [Name] | [Date] |
-| SC-004 | **Single-Source Dependency**: Custom connector available from only one supplier | 5 | 2 | 10 | 🟡 Active | • Design with standard connector alternative<br>• Negotiate extended supply agreement<br>• Maintain 12-month inventory | [Name] | [Date] |
-| SC-005 | **Supplier Quality Issues**: PCB manufacturer yield drops to <90%, causing delays | 4 | 2 | 8 | 🟢 Mitigated | • Qualify 2nd PCB fab<br>• Implement incoming QC checks<br>• Require supplier SPC data | [Name] | [Date] |
-| SC-006 | **Geopolitical Disruption**: Trade restrictions impact component availability from specific regions | 4 | 3 | 12 | 🟡 Active | • Diversify supplier geography<br>• Monitor trade policy updates<br>• Maintain strategic inventory | [Name] | [Date] |
+<details>
+<summary><b>➕ Add new supply chain risk</b></summary>
 
----
+```markdown
+| **SC-XXX** | [Description] | X | X | XX | 🟡 Active | • [Strategy 1]<br>• [Strategy 2] | [Owner] |
+```
 
-## 2. Technical Risks - Hardware
-
-| ID | Risk Description | Impact | Likelihood | Score | Status | Mitigation Strategy | Owner | Target Date |
-|----|------------------|--------|------------|-------|--------|---------------------|-------|-------------|
-| TH-001 | **Thermal Management Failure**: Motor drivers exceed 100°C at 40°C ambient during continuous operation | 5 | 4 | 20 | 🔴 Critical | • Thermal simulation (CFD analysis)<br>• Add heatsinks + forced air cooling<br>• Derate components to 80% max power<br>• Thermal chamber testing at EVT | [Name] | [Date] |
-| TH-002 | **EMI/EMC Non-Compliance**: Product fails FCC Class B radiated emissions by 8dB | 5 | 3 | 15 | 🟡 Active | • Pre-compliance testing at EVT<br>• Add shielding, ferrite beads, filters<br>• PCB layout optimization (ground planes)<br>• Budget $15K for EMC lab retests | [Name] | [Date] |
-| TH-003 | **Mechanical Interference**: Moving parts collide under tolerance stack-up worst case | 4 | 3 | 12 | 🟡 Active | • 3D tolerance analysis (Monte Carlo)<br>• Prototype testing with extreme tolerances<br>• Add 2mm clearance margin to design | [Name] | [Date] |
-| TH-004 | **Power Budget Exceeded**: Battery life falls short of 8hr target by 25% | 4 | 4 | 16 | 🟡 Active | • Power profiling of all subsystems<br>• Implement sleep modes<br>• Increase battery capacity 20%<br>• Optimize firmware for power efficiency | [Name] | [Date] |
-| TH-005 | **Sensor Accuracy Degradation**: Temperature/humidity affect sensor readings >10% | 3 | 3 | 9 | 🟡 Active | • Environmental testing -10°C to +50°C<br>• Calibration algorithm development<br>• Conformal coating for protection | [Name] | [Date] |
-| TH-006 | **Vibration Failure**: Solder joints fail under MIL-STD-810G vibration testing | 4 | 2 | 8 | 🟢 Mitigated | • Use strain relief for connectors<br>• Vibration testing at DVT<br>• Conformal coating + mechanical securing | [Name] | [Date] |
+</details>
 
 ---
 
-## 3. Technical Risks - Firmware/Software
+## ⚙️ 2. Technical Risks - Hardware
 
-| ID | Risk Description | Impact | Likelihood | Score | Status | Mitigation Strategy | Owner | Target Date |
-|----|------------------|--------|------------|-------|--------|---------------------|-------|-------------|
-| TS-001 | **HW/SW Integration Delays**: Firmware team blocked by late hardware availability | 5 | 4 | 20 | 🔴 Critical | • Provide dev boards 4 weeks before EVT<br>• Use hardware emulation/simulation<br>• Parallel firmware development on reference platform | [Name] | [Date] |
-| TS-002 | **Real-Time Performance**: Control loop misses 1ms deadline causing instability | 4 | 3 | 12 | 🟡 Active | • RTOS implementation with guaranteed timing<br>• Code profiling and optimization<br>• Upgrade to faster MCU if needed | [Name] | [Date] |
-| TS-003 | **OTA Update Bricking**: Firmware update fails leaving devices unrecoverable | 5 | 2 | 10 | 🟡 Active | • Dual-bank firmware with automatic rollback<br>• Bootloader with recovery mode<br>• Extensive OTA testing protocol | [Name] | [Date] |
-
----
-
-## 4. Manufacturing & Production Risks
-
-| ID | Risk Description | Impact | Likelihood | Score | Status | Mitigation Strategy | Owner | Target Date |
-|----|------------------|--------|------------|-------|--------|---------------------|-------|-------------|
-| MF-001 | **Low Manufacturing Yield**: First production run achieves only 75% yield vs 95% target | 5 | 3 | 15 | 🟡 Active | • DFMA review at DVT phase<br>• Pilot run (100 units) before mass production<br>• Poka-yoke fixtures for assembly<br>• Operator training program | [Name] | [Date] |
-| MF-002 | **Assembly Complexity**: Manual assembly takes 2x longer than estimated | 3 | 4 | 12 | 🟡 Active | • Time-motion study during pilot<br>• Simplify assembly steps (DFM)<br>• Develop assembly jigs/fixtures<br>• Video training materials | [Name] | [Date] |
-| MF-003 | **Test Equipment Unavailable**: Functional test fixtures not ready for PVT | 4 | 3 | 12 | 🟡 Active | • Start fixture design at DVT<br>• Parallel development with hardware<br>• Allocate $25K for test equipment budget | [Name] | [Date] |
-| MF-004 | **Calibration Requirements**: Product requires per-unit calibration adding 15min/unit | 3 | 3 | 9 | 🟡 Active | • Automated calibration routine<br>• Golden unit reference standard<br>• Self-calibration algorithm in firmware | [Name] | [Date] |
-| MF-005 | **Supplier Capacity Constraints**: CM can only produce 1K units/month vs 2K target | 4 | 2 | 8 | 🟢 Mitigated | • Qualify 2nd contract manufacturer<br>• Ramp production gradually<br>• Front-load manufacturing to build inventory | [Name] | [Date] |
+| ID | Risk | I | L | Score | Status | Mitigation | Owner |
+|----|------|:-:|:-:|:-----:|:------:|------------|-------|
+| **TH-001** | **Thermal failure**: Drivers exceed 100°C @ 40°C ambient | 5 | 4 | **20** 🔴 | 🔴 Critical | • CFD thermal sim<br>• Heatsinks + fans<br>• 80% power derate<br>• EVT thermal testing | `[Name]` |
+| **TH-002** | **EMI non-compliance**: FCC fail by 8dB | 5 | 3 | **15** 🟠 | 🟡 Active | • Pre-compliance at EVT<br>• Shielding/filters<br>• PCB layout opt<br>• $15K retest budget | `[Name]` |
+| **TH-003** | **Mechanical collision** (tolerance stack-up) | 4 | 3 | **12** 🟠 | 🟡 Active | • 3D tolerance analysis<br>• Extreme tolerance test<br>• +2mm clearance | `[Name]` |
+| **TH-004** | **Power budget exceeded** (-25% battery life) | 4 | 4 | **16** 🔴 | 🟡 Active | • Subsystem profiling<br>• Sleep modes<br>• +20% capacity<br>• FW optimization | `[Name]` |
+| **TH-005** | **Sensor drift** >10% (temp/humidity) | 3 | 3 | **9** 🟡 | 🟡 Active | • -10°C to +50°C test<br>• Calibration algo<br>• Conformal coating | `[Name]` |
+| **TH-006** | **Vibration failure** (MIL-STD-810G) | 4 | 2 | **8** 🟡 | 🟢 Mitigated | • Strain relief<br>• DVT vibration test<br>• Conformal coating | `[Name]` |
 
 ---
 
-## 5. Compliance & Regulatory Risks
+## 💻 3. Technical Risks - Firmware
 
-| ID | Risk Description | Impact | Likelihood | Score | Status | Mitigation Strategy | Owner | Target Date |
-|----|------------------|--------|------------|-------|--------|---------------------|-------|-------------|
-| CR-001 | **CE Certification Delay**: EMC testing failures require 2 design iterations | 5 | 3 | 15 | 🟡 Active | • Pre-compliance testing at EVT/DVT<br>• Design margin (meet limits by 6dB)<br>• Engage test lab early for consultation<br>• Budget 8 weeks for certification | [Name] | [Date] |
-| CR-002 | **Safety Standard Non-Compliance**: Product fails UL 60950-1 flammability tests | 5 | 2 | 10 | 🟡 Active | • Use UL-rated enclosure materials (V-0 rating)<br>• Safety review at DVT phase<br>• Pre-test with safety consultant | [Name] | [Date] |
-| CR-003 | **RoHS/REACH Violations**: Supplier substitutes non-compliant component without notice | 4 | 2 | 8 | 🟢 Mitigated | • Require compliance certificates in POs<br>• Incoming material inspection<br>• Supplier audits and agreements | [Name] | [Date] |
-| CR-004 | **Patent Infringement**: Competitor claims IP violation on key mechanism | 4 | 2 | 8 | 🟡 Active | • Patent clearance search<br>• Legal review of design<br>• Design-around alternatives ready | [Name] | [Date] |
-| CR-005 | **Export Control**: Product components subject to ITAR/EAR restrictions | 3 | 2 | 6 | 🟢 Mitigated | • Trade compliance review<br>• Source alternative non-restricted components<br>• Export license application | [Name] | [Date] |
+| ID | Risk | I | L | Score | Status | Mitigation | Owner |
+|----|------|:-:|:-:|:-----:|:------:|------------|-------|
+| **TS-001** | **HW/SW integration delay** (HW late) | 5 | 4 | **20** 🔴 | 🔴 Critical | • Dev boards -4wk early<br>• HW emulation<br>• Reference platform dev | `[Name]` |
+| **TS-002** | **Real-time deadline miss** (1ms loop) | 4 | 3 | **12** 🟠 | 🟡 Active | • RTOS guaranteed timing<br>• Code profiling<br>• Faster MCU option | `[Name]` |
+| **TS-003** | **OTA bricking** devices | 5 | 2 | **10** 🟠 | 🟡 Active | • Dual-bank firmware<br>• Auto rollback<br>• Recovery bootloader | `[Name]` |
 
 ---
 
-## 6. Market & Business Risks
+## 🏭 4. Manufacturing Risks
 
-| ID | Risk Description | Impact | Likelihood | Score | Status | Mitigation Strategy | Owner | Target Date |
-|----|------------------|--------|------------|-------|--------|---------------------|-------|-------------|
-| MB-001 | **Competitor Launches First**: Rival product launches 3 months before ours | 4 | 3 | 12 | 🟡 Active | • Accelerate timeline where possible<br>• Differentiate on features/quality<br>• Monitor competitor developments | [Name] | [Date] |
-| MB-002 | **Price Point Uncompetitive**: Final BOM cost exceeds target by 25% | 4 | 3 | 12 | 🟡 Active | • Value engineering exercises<br>• Volume discounts negotiation<br>• Feature prioritization (MVP approach) | [Name] | [Date] |
-| MB-003 | **Market Demand Lower Than Forecast**: Pre-orders 40% below projections | 3 | 3 | 9 | 🟡 Active | • Flexible manufacturing contracts<br>• Phased production ramp<br>• Just-in-time component ordering | [Name] | [Date] |
-
----
-
-## 7. Project Management Risks
-
-| ID | Risk Description | Impact | Likelihood | Score | Status | Mitigation Strategy | Owner | Target Date |
-|----|------------------|--------|------------|-------|--------|---------------------|-------|-------------|
-| PM-001 | **Key Personnel Turnover**: Lead hardware engineer leaves during DVT phase | 5 | 2 | 10 | 🟡 Active | • Cross-training team members<br>• Document design decisions thoroughly<br>• Competitive retention packages | [Name] | [Date] |
-| PM-002 | **Scope Creep**: Marketing requests 3 additional features mid-development | 4 | 4 | 16 | 🟡 Active | • Formal change control process<br>• Impact assessment for all changes<br>• Phase 2 feature parking lot | [Name] | [Date] |
-| PM-003 | **Communication Breakdown**: HW/SW teams misaligned on interface specs | 4 | 3 | 12 | 🟡 Active | • Weekly integration meetings<br>• Shared interface control document<br>• Co-location or daily standups | [Name] | [Date] |
+| ID | Risk | I | L | Score | Status | Mitigation | Owner |
+|----|------|:-:|:-:|:-----:|:------:|------------|-------|
+| **MF-001** | **Low yield** 75% vs 95% target | 5 | 3 | **15** 🟠 | 🟡 Active | • DVT DFMA review<br>• 100-unit pilot<br>• Poka-yoke fixtures<br>• Training program | `[Name]` |
+| **MF-002** | **Assembly takes 2x time** | 3 | 4 | **12** 🟠 | 🟡 Active | • Time-motion study<br>• DFM simplification<br>• Assembly jigs<br>• Video training | `[Name]` |
+| **MF-003** | **Test fixtures not ready** for PVT | 4 | 3 | **12** 🟠 | 🟡 Active | • Start design at DVT<br>• Parallel development<br>• $25K test budget | `[Name]` |
+| **MF-004** | **Calibration adds 15min/unit** | 3 | 3 | **9** 🟡 | 🟡 Active | • Auto calibration<br>• Golden reference<br>• Self-cal firmware | `[Name]` |
+| **MF-005** | **CM capacity** 1K vs 2K/mo target | 4 | 2 | **8** 🟡 | 🟢 Mitigated | • 2nd CM qualified<br>• Gradual ramp<br>• Build inventory | `[Name]` |
 
 ---
 
-## Risk Summary Dashboard
+## 🔒 5. Compliance & Regulatory
+
+| ID | Risk | I | L | Score | Status | Mitigation | Owner |
+|----|------|:-:|:-:|:-----:|:------:|------------|-------|
+| **CR-001** | **CE cert delay** (2 iterations) | 5 | 3 | **15** 🟠 | 🟡 Active | • EVT/DVT pre-test<br>• 6dB design margin<br>• Early lab consult<br>• 8wk cert window | `[Name]` |
+| **CR-002** | **UL flammability fail** | 5 | 2 | **10** 🟠 | 🟡 Active | • UL V-0 materials<br>• DVT safety review<br>• Pre-test consultant | `[Name]` |
+| **CR-003** | **RoHS violation** (supplier swap) | 4 | 2 | **8** 🟡 | 🟢 Mitigated | • Compliance certs in PO<br>• Incoming inspection<br>• Supplier audits | `[Name]` |
+| **CR-004** | **Patent infringement claim** | 4 | 2 | **8** 🟡 | 🟡 Active | • Patent clearance<br>• Legal review<br>• Design-around ready | `[Name]` |
+| **CR-005** | **Export control** (ITAR/EAR) | 3 | 2 | **6** 🟡 | 🟢 Mitigated | • Trade compliance<br>• Non-restricted alts<br>• Export license | `[Name]` |
+
+---
+
+## 📈 6. Market & Business
+
+| ID | Risk | I | L | Score | Status | Mitigation | Owner |
+|----|------|:-:|:-:|:-----:|:------:|------------|-------|
+| **MB-001** | **Competitor launches -3mo early** | 4 | 3 | **12** 🟠 | 🟡 Active | • Timeline acceleration<br>• Feature differentiation<br>• Competitor monitoring | `[Name]` |
+| **MB-002** | **BOM cost +25% over target** | 4 | 3 | **12** 🟠 | 🟡 Active | • Value engineering<br>• Volume discounts<br>• MVP prioritization | `[Name]` |
+| **MB-003** | **Demand -40% vs forecast** | 3 | 3 | **9** 🟡 | 🟡 Active | • Flexible CM contracts<br>• Phased ramp<br>• JIT ordering | `[Name]` |
+
+---
+
+## 👥 7. Project Management
+
+| ID | Risk | I | L | Score | Status | Mitigation | Owner |
+|----|------|:-:|:-:|:-----:|:------:|------------|-------|
+| **PM-001** | **Lead HW engineer leaves** @ DVT | 5 | 2 | **10** 🟠 | 🟡 Active | • Cross-training<br>• Design documentation<br>• Retention packages | `[Name]` |
+| **PM-002** | **Scope creep** +3 features mid-dev | 4 | 4 | **16** 🔴 | 🟡 Active | • Change control<br>• Impact assessment<br>• Phase 2 parking lot | `[Name]` |
+| **PM-003** | **HW/SW spec misalignment** | 4 | 3 | **12** 🟠 | 🟡 Active | • Weekly integration sync<br>• Interface control doc<br>• Daily standups | `[Name]` |
+
+---
+
+## 📊 Risk Summary
 
 ### By Priority
-- 🔴 **Critical (15-25)**: [COUNT] risks
-- 🟠 **High (10-14)**: [COUNT] risks  
-- 🟡 **Medium (5-9)**: [COUNT] risks
-- 🟢 **Low (1-4)**: [COUNT] risks
+
+```
+🔴 Critical (15-25):  5 risks  ⚠️  IMMEDIATE ACTION REQUIRED
+🟠 High (10-14):     15 risks  →  Active mitigation in progress
+🟡 Medium (5-9):      7 risks  →  Monitor regularly
+🟢 Low (1-4):         0 risks  →  Accept and track
+```
 
 ### By Status
-- 🔴 **Active - Critical Attention**: [COUNT]
-- 🟡 **Active - Monitoring**: [COUNT]
-- 🟢 **Mitigated**: [COUNT]
-- 🔵 **Occurred - Managing**: [COUNT]
-- ⚪ **Closed**: [COUNT]
 
-### Top 5 Risks (by Risk Score)
-1. [Risk ID]: [Description] - Score: [XX]
-2. [Risk ID]: [Description] - Score: [XX]
-3. [Risk ID]: [Description] - Score: [XX]
-4. [Risk ID]: [Description] - Score: [XX]
-5. [Risk ID]: [Description] - Score: [XX]
+- 🔴 **Critical Attention**: 2 risks (TH-001, TS-001)
+- 🟡 **Active Monitoring**: 23 risks
+- 🟢 **Mitigated**: 4 risks
+- ⚪ **Closed**: 0 risks
+
+### Top 5 Risks (by Score)
+
+1. **TH-001** - Thermal management failure → **Score: 20** 🔴
+2. **TS-001** - HW/SW integration delays → **Score: 20** 🔴
+3. **SC-002** - Extended component lead times → **Score: 16** 🔴
+4. **TH-004** - Power budget exceeded → **Score: 16** 🔴
+5. **PM-002** - Scope creep → **Score: 16** 🔴
 
 ---
 
-## Best Practices for Hardware Risk Management
+## 💡 Best Practices
 
-### 1. Continuous Risk Identification
-- Conduct risk brainstorming at project kickoff with full cross-functional team
-- Add new risks as they emerge during sprints, design reviews, and testing
-- Leverage FMEA (Failure Mode and Effect Analysis) for systematic analysis
-- Learn from past projects - review lessons learned from similar products
+### 🔄 Risk Review Cadence
 
-### 2. Prioritize Ruthlessly
-- Focus mitigation efforts on Critical (15-25) and High (10-14) risks first
-- Don't over-invest in Low (1-4) risks - accept or monitor them
-- Re-calculate risk scores after mitigation actions (residual risk)
+| Frequency | Scope | Participants |
+|-----------|-------|--------------|
+| **Daily** | 🔴 Critical risks only | PM + Risk owners |
+| **Weekly** | All active risks | Full team at sprint planning |
+| **Bi-weekly** | Risk register update | Cross-functional review |
+| **Phase Gates** | Complete assessment | Stakeholders + leadership |
 
-### 3. Mitigation Strategies
+### 🎯 Mitigation Strategies
+
 | Strategy | When to Use | Example |
 |----------|-------------|---------|
-| **Avoid** | Eliminate the risk entirely | Change design to remove single-source component |
-| **Reduce** | Lower probability or impact | Pre-compliance testing, dual sourcing |
-| **Transfer** | Shift risk to another party | Insurance, supplier guarantees, outsourcing |
-| **Accept** | Risk score acceptable | Monitor low-probability risks with contingency plan |
+| **Avoid** | Eliminate risk completely | Remove single-source component from design |
+| **Reduce** | Lower probability/impact | Pre-compliance testing, dual sourcing |
+| **Transfer** | Shift to another party | Insurance, supplier warranties, outsourcing |
+| **Accept** | Score acceptable | Monitor with contingency plan |
 
-### 4. Phase-Specific Focus
-- **Concept Phase**: Technical feasibility, market risks
-- **EVT Phase**: Component availability, thermal/power, HW/SW integration
-- **DVT Phase**: Compliance, manufacturing yield, cost targets
-- **PVT Phase**: Supplier capacity, test coverage, production ramp
+### 📅 Phase-Specific Focus
 
-### 5. Review Cadence
-- **Weekly**: Review critical (15-25) risks at sprint planning
-- **Bi-weekly**: Update full risk register with team
-- **Phase Gates**: Comprehensive risk review with stakeholders before gate approval
-- **Post-Mortem**: Convert occurred risks into lessons learned
+- **Concept**: Technical feasibility, market validation
+- **EVT**: Component availability, thermal/power, HW/SW integration
+- **DVT**: Compliance testing, manufacturing yield, BOM cost
+- **PVT**: Production capacity, test coverage, quality metrics
 
----
+### 🔍 Risk Identification Sources
 
-## Risk Response Status Definitions
-
-| Status | Icon | Description | Action Required |
-|--------|------|-------------|-----------------|
-| Active - Critical | 🔴 | High priority risk requiring immediate action | Daily monitoring, escalate if needed |
-| Active - Monitoring | 🟡 | Risk identified, mitigation plan in place | Regular updates, execute mitigation |
-| Mitigated | 🟢 | Mitigation actions completed, residual risk acceptable | Monitor for re-emergence |
-| Occurred | 🔵 | Risk event happened, executing response plan | Active management, lessons learned |
-| Closed | ⚪ | Risk no longer applicable or fully resolved | Archive for future reference |
+- FMEA (Failure Mode and Effect Analysis)
+- Design reviews and technical discussions
+- Supplier communications and market intelligence
+- Lessons learned from past projects
+- Team brainstorming sessions
 
 ---
 
-## Notes & Lessons Learned
+## 📝 Status Definitions
 
-### Key Insights from Risk Reviews
-[Add observations, patterns, or lessons learned as risks are managed]
-
-### Risk Triggers & Early Warning Signs
-[Document leading indicators that predict risk occurrence]
-
-### Recommended Process Improvements
-[Capture ideas to improve risk management for future projects]
+| Icon | Status | Description | Action |
+|:----:|--------|-------------|--------|
+| 🔴 | **Critical** | Requires immediate escalation | Daily review, leadership involved |
+| 🟡 | **Active** | Mitigation plan in progress | Regular monitoring, execute plan |
+| 🟢 | **Mitigated** | Actions complete, risk acceptable | Watch for re-emergence |
+| 🔵 | **Occurred** | Risk event happened | Manage impact, capture lessons |
+| ⚪ | **Closed** | No longer applicable | Archive for reference |
 
 ---
 
-**Document Version**: 1.0  
-**Template Version**: hardware-pm-starter-kit v1.0  
-**Last Review Date**: [DATE]  
-**Next Review Date**: [DATE]
+## 📌 Quick Actions
+
+### Adding a New Risk
+
+1. Choose appropriate category (SC, TH, TS, MF, CR, MB, PM)
+2. Assign next sequential ID (e.g., SC-007)
+3. Score Impact × Likelihood
+4. Define concrete mitigation steps
+5. Assign owner and target date
+6. Update summary dashboard
+
+### Escalating a Risk
+
+When risk score ≥ 15 or status changes to 🔴:
+1. Alert PM and executive sponsor immediately
+2. Schedule mitigation review within 24 hours
+3. Allocate additional resources if needed
+4. Document escalation in notes section
+
+---
+
+## 📋 Notes & Lessons Learned
+
+### Key Insights
+*[Document patterns, surprises, and recurring themes]*
+
+### Early Warning Indicators
+*[Track leading signals that predict risk occurrence]*
+
+### Process Improvements
+*[Capture ideas for next project]*
+
+---
+
+**📄 Document Version**: 1.0  
+**🏷️ Template**: hardware-pm-starter-kit v1.0  
+**📅 Last Review**: 10/02/26  
+
+---
+
+## 🔗 Related Templates
+
+- [Project Charter](./project-charter-hardware.md) - Project scope and constraints
+- [Phase Gate Checklist](./phase-gate-checklist.md) - Gate review criteria
+- [Sprint Planning](./sprint-planning-hardware.md) - Hardware sprint template
+- [Lessons Learned](./lessons-learned-template.md) - Post-project review
