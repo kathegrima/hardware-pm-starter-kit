@@ -4,6 +4,10 @@
 
 ---
 
+**Navigation**: [🏠 Home](../) | [📋 All Templates](../templates/) | [📚 All Guides](../guides/)
+
+---
+
 ## Document Information
 
 | Field | Details |
