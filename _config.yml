@@ -3,7 +3,7 @@ description: "Comprehensive templates and guides for hardware product managers"
 author: "KatheGrima"
 baseurl: "/hardware-pm-starter-kit"
 url: "https://kathegrima.github.io"
-theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
 
 markdown: kramdown
 plugins:
