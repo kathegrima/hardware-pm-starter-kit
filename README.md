@@ -63,12 +63,12 @@ This starter kit is designed for:
 - **[Risk Management Guide](guides/04-risk-management-guide.md)** - Hardware-specific risk identification and mitigation
 - **[Compliance Guide for EU/Italy](guides/05-compliance-guide-eu.md)** - CE marking, RoHS, REACH, MDR, Machinery Directive
 
-### 🖼️ Visual Assets (`/assets/`)
+### 🎯 Additional Resources
 
-- Project timeline diagrams
-- Phase gate flowcharts
-- Risk assessment matrices
-- Hardware development lifecycle visuals
+**Coming Soon**:
+- Visual diagrams (timeline, flowcharts, risk matrices)
+- Excel/Google Sheets versions of templates
+- Integration guides for PM tools
 
 ---
 
