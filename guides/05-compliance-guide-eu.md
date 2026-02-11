@@ -29,7 +29,7 @@
 - Criminal liability for safety violations in some cases
 
 **Market Access**:
-- EU = 450 million consumers, €15 trillion GDP
+- EU = 447 million consumers (27 member states post-Brexit), ~€17 trillion GDP
 - Single market access (27 countries with one certification)
 - Global credibility (CE marking recognized worldwide)
 
@@ -167,7 +167,10 @@ CE marking is mandatory for products covered by **EU directives**. Most hardware
 
 **Purpose**: Ensure electrical products are safe and don't pose electric shock, fire, or injury risk.
 
-**Applies To**: Products with voltage >50V AC or >75V DC
+**Applies To**: Products with rated voltage:
+- >50V AC, or
+- >75V DC (between conductors), or  
+- >50V DC (between conductor and earth)
 
 **Key Requirements**:
 - Protection against electric shock (insulation, earthing)
@@ -207,12 +210,16 @@ CE marking is mandatory for products covered by **EU directives**. Most hardware
 
 **Restricted Substances** (max concentration limits):
 - Lead (Pb): 0.1% (1000 ppm)
+  - Note: Several lead exemptions expire June 30, 2027 (per Delegated Acts September 2025)
+  - Check exemption 6(a-c), 7(a), 7(c) status for your application
 - Mercury (Hg): 0.1%
 - Cadmium (Cd): 0.01% (100 ppm)
 - Hexavalent chromium (Cr6+): 0.1%
 - Polybrominated biphenyls (PBB): 0.1%
 - Polybrominated diphenyl ethers (PBDE): 0.1%
 - Phthalates (DEHP, BBP, DBP, DIBP): 0.1% each
+
+**New restrictions**: Monitor REACH SVHC list (updated twice/year) for emerging substance bans
 
 **Testing Required**:
 - XRF (X-ray fluorescence) screening of components and materials
@@ -1066,5 +1073,7 @@ Title: [Title, e.g., CEO / Engineering Director]
 **Repository**: https://github.com/kathegrima/hardware-pm-starter-kit
 
 ---
+
+> **Note**: This guide reflects regulations and best practices as of February 2026. Always verify current requirements with official sources or compliance consultants before making project decisions.
 
 *"Compliance is not a checkbox - it's the foundation of responsible hardware development."*
