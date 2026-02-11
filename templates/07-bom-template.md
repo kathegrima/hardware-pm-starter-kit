@@ -4,6 +4,10 @@
 
 ---
 
+**Navigation**: [🏠 Home](../) | [📋 All Templates](../templates/) | [📚 All Guides](../guides/)
+
+---
+
 ## Table of Contents
 
 1. [Introduction to BOM Management](#introduction-to-bom-management)
