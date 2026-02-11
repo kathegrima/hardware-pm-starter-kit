@@ -314,9 +314,11 @@ Found a way to improve these templates? Create an issue or pull request with:
 
 ## License
 
-These templates are provided under the [MIT License](../LICENSE).
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Free to use, modify, and distribute for commercial or personal projects.
+**Free for non-commercial use** with attribution. **Commercial use prohibited** without permission.
+
+For commercial licensing inquiries, contact: [GitHub Issues](https://github.com/kathegrima/hardware-pm-starter-kit/issues)
 
 ---
 
