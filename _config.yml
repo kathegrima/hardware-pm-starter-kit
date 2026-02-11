@@ -4,8 +4,8 @@
 title: "Hardware PM Starter Kit"
 description: "Comprehensive templates and guides for hardware product managers"
 author: "KatheGrima"
-baseurl: "/hardware-pm-starter-kit"
-url: "https://kathegrima.github.io"
+baseurl: "/hardware-pm-starter-kit"  # CON lo slash iniziale
+url: "https://kathegrima.github.io"  # SENZA trailing slash
 
 # Theme Selection (Cayman = clean, professional, great for docs)
 theme: jekyll-theme-cayman
