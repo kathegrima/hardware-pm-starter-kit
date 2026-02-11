@@ -63,4 +63,12 @@ Each guide is standalone but cross-referenced. You can:
 
 ---
 
+## License
+
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+**Free for non-commercial use** with attribution. **Commercial use prohibited** without permission.
+
+For commercial licensing inquiries, contact: [GitHub Issues](https://github.com/kathegrima/hardware-pm-starter-kit/issues)
+
 **Last Updated**: February 2026
