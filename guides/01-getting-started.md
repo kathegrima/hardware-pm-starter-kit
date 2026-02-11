@@ -8,35 +8,35 @@
 
 Welcome to the **Hardware Project Management Getting Started Guide**. If you're transitioning from software PM, leading your first hardware project, or launching a physical product, this guide will equip you with the foundational knowledge to succeed in the unique world of hardware development.
 
-**Hardware project management differs fundamentally from software PM** due to the physical nature of products and long lead times[web:7][web:10]. You can't "patch" hardware after manufacturing, changes are expensive, and every decision has lasting consequences. This guide will help you navigate these challenges.
+**Hardware project management differs fundamentally from software PM** due to the physical nature of products and long lead times. You can't "patch" hardware after manufacturing, changes are expensive, and every decision has lasting consequences. This guide will help you navigate these challenges.
 
 ---
 
 ## What Makes Hardware PM Different?
 
-Hardware project management differs fundamentally from software PM due to the **physical nature of products** and **long lead times**[web:7][web:10].
+Hardware project management differs fundamentally from software PM due to the **physical nature of products** and **long lead times**.
 
 ### Key Differences: Hardware vs Software PM
 
 | Aspect | Software PM | Hardware PM |
 |--------|-------------|-------------|
 | **Iteration Speed** | Days to weeks | Months to quarters |
-| **Changes After Release** | Can patch, update, rollback instantly | Cannot modify once manufactured[web:7] |
-| **Marginal Cost** | Near zero for updates | High - tooling, inventory, rework[web:177] |
+| **Changes After Release** | Can patch, update, rollback instantly | Cannot modify once manufactured |
+| **Marginal Cost** | Near zero for updates | High - tooling, inventory, rework |
 | **Timeline** | 2-4 week sprints | 4-8 week sprints |
-| **Cost of Error** | Low - easy to "step back"[web:177] | High - may require redesign of board + enclosure[web:177] |
+| **Cost of Error** | Low - easy to "step back" | High - may require redesign of board + enclosure |
 | **Risk Impact** | Bugs, performance issues | Years of warranty claims, recalls |
 | **Dependencies** | APIs, libraries, cloud services | Component availability, supplier capacity, lead times |
-| **Flexibility** | Highly flexible, iterative[web:7] | Linear, phased, expensive to change[web:7] |
-| **Product Lifecycle** | Continuous development and updates[web:7] | Long development (18-36 months), limited by physical wear[web:7] |
+| **Flexibility** | Highly flexible, iterative| Linear, phased, expensive to change |
+| **Product Lifecycle** | Continuous development and updates | Long development (18-36 months), limited by physical wear |
 
-**The biggest difference**: In software, you pay for people's ability to create value and respond quickly to change. In hardware, you pay upfront for materials, tooling, and manufacturing capacity—and once committed, changes are costly[web:7].
+**The biggest difference**: In software, you pay for people's ability to create value and respond quickly to change. In hardware, you pay upfront for materials, tooling, and manufacturing capacity—and once committed, changes are costly.
 
 ---
 
 ## The Hardware Development Lifecycle
 
-Understanding the **phase-gate process** is critical for hardware PM. Unlike software's continuous deployment, hardware follows a structured, sequential process where each phase must be completed before advancing[web:7][web:19].
+Understanding the **phase-gate process** is critical for hardware PM. Unlike software's continuous deployment, hardware follows a structured, sequential process where each phase must be completed before advancing.
 
 ### The Standard Flow
 
@@ -61,7 +61,7 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 - Business case validation
 
 **Deliverables**:
-- Product Requirements Document (PRD)[web:19]
+- Product Requirements Document (PRD)
 - Initial BOM with cost estimates
 - Project charter with scope, timeline, budget
 - Risk register
@@ -76,11 +76,11 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 
 #### 2. EVT - Engineering Validation Test (8-16 weeks)
 
-**Goal**: Prove core functionality works[web:19][web:55]
+**Goal**: Prove core functionality works
 
-**What is EVT?** Engineering Validation Testing is the first major milestone where your prototype is tested against the product's intended functions and performance[web:19]. It's all about developing **work-like** and (sometimes) **work-like + look-alike** prototypes to validate, test, and refine the core functionality[web:55].
+**What is EVT?** Engineering Validation Testing is the first major milestone where your prototype is tested against the product's intended functions and performance. It's all about developing **work-like** and (sometimes) **work-like + look-alike** prototypes to validate, test, and refine the core functionality.
 
-**Key Activities**[web:19][web:55]:
+**Key Activities**:
 - PCB testing and debugging
 - Firmware validation and bringup
 - Electrical load testing
@@ -89,18 +89,18 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 - I/O interface testing
 - Multiple iterations to eliminate design flaws
 
-**Prototype Quantities**: 3-50 units (average 5-12 prototypes)[web:55]
+**Prototype Quantities**: 3-50 units (average 5-12 prototypes)
 
-**Technologies Used**: 3D printing, laser cut/milled PCBs, soft tooling (silicon molds), professional hardware development kits (HDK), rapidly cut/milled parts[web:55]
+**Technologies Used**: 3D printing, laser cut/milled PCBs, soft tooling (silicon molds), professional hardware development kits (HDK), rapidly cut/milled parts
 
 **Deliverables**:
-- Fully functional prototype with key components performing as intended[web:55]
+- Fully functional prototype with key components performing as intended
 - Validated schematic and PCB layout
 - Initial firmware build
 - Test results and analysis
 - Updated BOM with confirmed components
 
-**Limitations**: Prototypes may look somewhat ugly, raw, and lack beautiful cosmetic finish. The EVT prototype can miss some non-key mechanical features such as handles, curves in enclosure, painting, etc.[web:55]
+**Limitations**: Prototypes may look somewhat ugly, raw, and lack beautiful cosmetic finish. The EVT prototype can miss some non-key mechanical features such as handles, curves in enclosure, painting, etc.
 
 **Gate Criteria**:
 - Core functionality proven
@@ -108,17 +108,17 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 - Performance meets key specifications
 - No critical design flaws identified
 
-**Common Failure Rate**: Up to 40% of units can fail during initial EVT testing - this is normal and expected[web:180]
+**Common Failure Rate**: Up to 40% of units can fail during initial EVT testing - this is normal and expected
 
 ---
 
 #### 3. DVT - Design Validation Test (12-20 weeks)
 
-**Goal**: Validate design meets all specifications[web:19][web:55]
+**Goal**: Validate design meets all specifications
 
-**What is DVT?** Design Validation Testing serves the need to validate the developed product's design and start implementing DFM (Design for Manufacturability)[web:55]. After completing EVT, you lock in the design of prototypes and enclosures that **look like the final product**[web:55].
+**What is DVT?** Design Validation Testing serves the need to validate the developed product's design and start implementing DFM (Design for Manufacturability). After completing EVT, you lock in the design of prototypes and enclosures that **look like the final product**.
 
-**Key Activities**[web:19][web:55]:
+**Key Activities**:
 - Cosmetic and mechanical validation
 - Environmental testing (temperature, humidity, vibration, drop tests)
 - EMC/EMI testing (electromagnetic compatibility)
@@ -129,21 +129,21 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 - DFM (Design for Manufacturability) implementation
 - Finalize industrial design
 
-**Prototype Quantities**: 20-200 units[web:55]
+**Prototype Quantities**: 20-200 units
 
-**Purpose of Prototypes**: Certification lab tests, beta tests with early customers/testers[web:55]
+**Purpose of Prototypes**: Certification lab tests, beta tests with early customers/testers
 
-**Technologies Used**: 3D printed + gel-coated enclosures with finish "as from the factory", rapidly cut/milled parts, industrial equipment (injection molding), 1st generation tooling (quick molds)[web:55]
+**Technologies Used**: 3D printed + gel-coated enclosures with finish "as from the factory", rapidly cut/milled parts, industrial equipment (injection molding), 1st generation tooling (quick molds)
 
 **Deliverables**:
-- Production-intent design (MVP - Minimum Viable Product)[web:55]
+- Production-intent design (MVP - Minimum Viable Product)
 - Complete BOM with costs and suppliers
 - Design documentation package
 - Environmental and compliance test reports
 - Packaging design completed
 - DFX (Design for X) analysis complete
 - Manufacturing process plan
-- Estimate mass-production yields[web:55]
+- Estimate mass-production yields
 
 **Gate Criteria**:
 - Design validated against all specifications
@@ -152,17 +152,17 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 - Manufacturing feasibility confirmed
 - Ready for tooling investment
 
-**This is the critical "point of no return"**: After DVT, any significant design change requires returning to DVT phase, wasting time and money[web:55].
+**This is the critical "point of no return"**: After DVT, any significant design change requires returning to DVT phase, wasting time and money.
 
 ---
 
 #### 4. PVT - Production Validation Test (8-16 weeks)
 
-**Goal**: Validate manufacturing readiness[web:19][web:55]
+**Goal**: Validate manufacturing readiness
 
-**What is PVT?** Production Validation Testing is the last step before officially commencing mass production[web:55]. Usually 5-10% of the production run is delivered in PVT, aiming to stabilize the quality of the manufacturable product[web:55].
+**What is PVT?** Production Validation Testing is the last step before officially commencing mass production. Usually 5-10% of the production run is delivered in PVT, aiming to stabilize the quality of the manufacturable product.
 
-**Key Activities**[web:19][web:55]:
+**Key Activities**:
 - Pilot run (small batch with production tooling)
 - Manufacturing process validation
 - Quality control metrics validation
@@ -172,21 +172,21 @@ Concept → EVT → DVT → PVT → Mass Production → Maintenance → End-of-L
 - Supply chain validation
 - Packaging and logistics validation
 - Final cost validation
-- All components, materials, packaging, and logistics planned[web:55]
+- All components, materials, packaging, and logistics planned
 
-**Prototype Quantities**: 50-500 units (to verify mass-production yields and provide product samples)[web:55]
+**Prototype Quantities**: 50-500 units (to verify mass-production yields and provide product samples)
 
-**Technologies**: Industrial technologies suitable for volume production only, 2nd generation molds for plastic parts[web:55]
+**Technologies**: Industrial technologies suitable for volume production only, 2nd generation molds for plastic parts
 
 **Deliverables**:
-- Pilot build units (also called "Beta" or "Golden Samples")[web:55]
+- Pilot build units (also called "Beta" or "Golden Samples")
 - Manufacturing process documentation
 - Quality control plan and acceptance criteria
 - Supply chain agreements
 - Final cost breakdown
 - Production readiness review
 
-**Limitations**: Only minor changes are allowed at PVT. Any significant design change kicks the project back to DVT[web:55]. The time required to design and produce custom tools is generally long (3-6 months)[web:55].
+**Limitations**: Only minor changes are allowed at PVT. Any significant design change kicks the project back to DVT. The time required to design and produce custom tools is generally long (3-6 months).
 
 **Gate Criteria**:
 - Yield targets met (typically >95%)
@@ -336,7 +336,7 @@ The **Bill of Materials (BOM)** is the complete list of components, materials, a
 
 ### 6. Cost Structure in Hardware
 
-**Hardware costs are upfront and capital-intensive**[web:7]:
+**Hardware costs are upfront and capital-intensive**:
 
 **Development Costs** (One-Time):
 - Engineering design (schematic, PCB layout, firmware)
@@ -370,13 +370,13 @@ The **Bill of Materials (BOM)** is the complete list of components, materials, a
 
 ### Waterfall vs Agile in Hardware
 
-**Hardware projects are primarily Waterfall**[web:181] because:
-- Physical products require sequential phases[web:7]
-- High cost of error prevents "fail fast" approach[web:177]
+**Hardware projects are primarily Waterfall** because:
+- Physical products require sequential phases
+- High cost of error prevents "fail fast" approach
 - Tooling investment creates "points of no return"
 - Supply chain lead times prevent rapid iteration
 
-**BUT: Modern hardware teams use hybrid approaches**[web:174]:
+**BUT: Modern hardware teams use hybrid approaches**:
 
 **Proof of Concept (POC) Phase** - Agile-like:
 - Use off-the-shelf components
@@ -388,7 +388,7 @@ The **Bill of Materials (BOM)** is the complete list of components, materials, a
 - Architecture locked
 - Hardware and firmware work independently
 - Integration testing after first custom PCB arrives
-- Expect 2-3 iterations to get it right[web:174]
+- Expect 2-3 iterations to get it right
 
 **IoT/Connected Devices**: Hardware uses predictive (Waterfall), while firmware/software/cloud use Agile sprints—teams synchronize at integration points.
 
@@ -423,9 +423,9 @@ The **Bill of Materials (BOM)** is the complete list of components, materials, a
 
 ### 1. Communication
 
-**Efficient team communication** is challenging but critical[web:88].
+**Efficient team communication** is challenging but critical.
 
-**Communication Strategy**[web:88]:
+**Communication Strategy**:
 - **Team sync meetings**: 2x per week, 30 minutes for 6-8 engineers
 - **Method selection**: Choose right tool for the task
   - Real-time: Slack/Teams for quick questions
@@ -438,7 +438,7 @@ The **Bill of Materials (BOM)** is the complete list of components, materials, a
 
 ### 2. Documentation
 
-**Hardware requires rigorous documentation**[web:88] because:
+**Hardware requires rigorous documentation** because:
 - Design decisions must be traceable
 - Manufacturing needs complete specifications
 - Compliance requires proof of validation
@@ -459,7 +459,7 @@ The **Bill of Materials (BOM)** is the complete list of components, materials, a
 
 ### 3. Risk Management
 
-**Hardware risks are different from software**[web:177]:
+**Hardware risks are different from software**:
 - Longer timelines mean more uncertainty
 - Physical failures have real-world consequences
 - Supply chain disruptions can halt production
@@ -486,7 +486,7 @@ The **Bill of Materials (BOM)** is the complete list of components, materials, a
 
 ### 4. Coordination Across Disciplines
 
-Hardware projects require **coordination of many processes and people** with diverse competencies[web:88]:
+Hardware projects require **coordination of many processes and people** with diverse competencies:
 
 **Typical Team Structure**:
 - **Project Manager** - Timeline, budget, coordination
@@ -551,7 +551,7 @@ Hardware projects require **coordination of many processes and people** with div
 
 **Mistake**: Making design changes after tooling commitment.
 
-**Reality**: Post-tooling changes cost 10-100x more than pre-tooling changes[web:177].
+**Reality**: Post-tooling changes cost 10-100x more than pre-tooling changes.
 
 **Solution**: Rigorous phase-gate reviews. Lock design at DVT. Use formal change control after design freeze.
 
