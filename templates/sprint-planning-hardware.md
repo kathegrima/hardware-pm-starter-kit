@@ -450,7 +450,7 @@ Hardware-specific retrospective questions:
 
 **Document Version**: 1.0  
 **Template**: hardware-pm-starter-kit v1.0  
-**Last Updated**: `[DATE]`
+**Last Updated**: `11/02/2026`
 
 ---
 
