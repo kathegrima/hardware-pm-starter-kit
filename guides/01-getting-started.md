@@ -320,7 +320,11 @@ Hardware PM must account for **long lead times** that are outside your control.
 - **PCB fabrication**: 2-4 weeks (standard), 1 week (expedite, 2x cost)
 - **PCB assembly**: 1-3 weeks
 - **Plastic injection molding**: 8-16 weeks for tooling + 2-4 weeks per batch
-- **Certifications** (CE, FCC, UL): 4-12 weeks, cost: €5K-€50K typical
+- **Certifications**: 
+  - CE marking (EMC + LVD + RoHS): 4-8 weeks, €8K-€25K
+  - RED (if wireless): additional 4-8 weeks, €15K-€40K
+  - Full EU compliance suite: 3-6 months total, €25K-€80K typical
+  - Medical devices (MDR): 12-24 months, €100K-€500K+
 
 **Buffer Strategy**: Add 20-30% time buffer for supply chain delays in your project timeline. Always have Plan B suppliers identified.
 
