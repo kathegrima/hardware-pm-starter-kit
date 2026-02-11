@@ -5,6 +5,10 @@
 
 ---
 
+**Navigation**: [🏠 Home](../) | [📋 All Templates](../templates/) | [📚 All Guides](../guides/)
+
+---
+
 ## Project Information
 
 - **Project Name**: `[PROJECT_NAME]`
