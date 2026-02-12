@@ -64,9 +64,9 @@
 - [ ] [Goal 3 - e.g., "Launch to market by Q4 2026"]
 
 **Actual Achievement**:
-- ✅ [Goal 1]: Achieved - 5.2kg capacity validated
-- ⚠️ [Goal 2]: Partial - BOM cost $545 (9% over target)
-- ❌ [Goal 3]: Missed - Launched Q1 2027 (3 months late)
+- [Goal 1]: Achieved - 5.2kg capacity validated
+- [Goal 2]: Partial - BOM cost $545 (9% over target)
+- [Goal 3]: Missed - Launched Q1 2027 (3 months late)
 
 ### Key Metrics
 
@@ -83,12 +83,12 @@
 
 | Role | Name | Contribution | Performance |
 |------|------|--------------|-------------|
-| Project Manager | [Name] | Overall coordination | ⭐⭐⭐⭐⭐ |
-| Hardware Lead | [Name] | Electrical design | ⭐⭐⭐⭐ |
-| Firmware Lead | [Name] | Embedded software | ⭐⭐⭐⭐⭐ |
-| Mechanical Lead | [Name] | Mechanical design | ⭐⭐⭐ |
-| Supply Chain | [Name] | Procurement | ⭐⭐⭐⭐ |
-| Manufacturing Eng | [Name] | DFM, production | ⭐⭐⭐⭐ |
+| Project Manager | [Name] | Overall coordination | 5/5 |
+| Hardware Lead | [Name] | Electrical design | 4/5 |
+| Firmware Lead | [Name] | Embedded software | 5/5 |
+| Mechanical Lead | [Name] | Mechanical design | 3/5 |
+| Supply Chain | [Name] | Procurement | 4/5 |
+| Manufacturing Eng | [Name] | DFM, production | 4/5 |
 
 ---
 
@@ -111,8 +111,8 @@
 **Impact**: 🟢 High - Differentiated product performance in market
 
 **Apply to Future Projects**: 
-- ✅ Invest in hardware emulators for parallel HW/FW development
-- ✅ Schedule dedicated integration sprints with co-located teams
+- Invest in hardware emulators for parallel HW/FW development
+- Schedule dedicated integration sprints with co-located teams
 
 ---
 
@@ -127,7 +127,7 @@
 **Impact**: 🟢 High / 🟡 Medium / ⚪ Low
 
 **Apply to Future Projects**: 
-- ✅ [Actionable takeaway]
+- [Actionable takeaway]
 
 ---
 
@@ -144,7 +144,7 @@
 **Impact**: 🟢 High / 🟡 Medium / ⚪ Low
 
 **Apply to Future Projects**: 
-- ✅ [Actionable takeaway]
+- [Actionable takeaway]
 
 ---
 
@@ -161,7 +161,7 @@
 **Impact**: 🟢 High / 🟡 Medium / ⚪ Low
 
 **Apply to Future Projects**: 
-- ✅ [Actionable takeaway]
+- [Actionable takeaway]
 
 ---
 
@@ -193,9 +193,9 @@
 - Full temp range testing (-10°C to +50°C) at EVT
 
 **Prevent in Future Projects**:
-- 🚨 **Mandatory thermal simulation** at Concept phase for any power >10W
-- 🚨 **Test at max ambient temp** during initial prototyping
-- 🚨 **Design margin** - thermal headroom 20-30% below max ratings
+- **Mandatory thermal simulation** at Concept phase for any power >10W
+- **Test at max ambient temp** during initial prototyping
+- **Design margin** - thermal headroom 20-30% below max ratings
 
 ---
 
@@ -214,8 +214,8 @@
 - [Resolution steps]
 
 **Prevent in Future Projects**:
-- 🚨 [Prevention action 1]
-- 🚨 [Prevention action 2]
+- [Prevention action 1]
+- [Prevention action 2]
 
 ---
 
@@ -236,8 +236,8 @@
 - [Resolution steps]
 
 **Prevent in Future Projects**:
-- 🚨 [Prevention action 1]
-- 🚨 [Prevention action 2]
+- [Prevention action 1]
+- [Prevention action 2]
 
 ---
 
@@ -258,8 +258,8 @@
 - [Resolution steps]
 
 **Prevent in Future Projects**:
-- 🚨 [Prevention action 1]
-- 🚨 [Prevention action 2]
+- [Prevention action 1]
+- [Prevention action 2]
 
 ---
 
