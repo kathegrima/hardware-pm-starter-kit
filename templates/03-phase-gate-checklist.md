@@ -36,7 +36,7 @@ Concept → EVT → DVT → PVT → Production Launch
   Gate0   Gate1  Gate2  Gate3    Gate4
 ```
 
-|| Phase | Purpose | Typical Quantities | Key Focus |
+| Phase | Purpose | Typical Quantities | Key Focus |
 |-------|---------|-------------------|--------------|
 | **Concept** | Validate feasibility | Proof-of-concept | Requirements, risks, business case |
 | **EVT** | Prove design works | 10-50 units | Functionality, performance, first integration |
