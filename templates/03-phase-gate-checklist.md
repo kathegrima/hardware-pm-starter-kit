@@ -91,11 +91,11 @@ Concept → EVT → DVT → PVT → Production Launch
 > All critical items must be complete before advancing to EVT
 
 **Critical:**
-- ✅ PRD approved by stakeholders
-- ✅ Technical feasibility demonstrated (proof-of-concept works)
-- ✅ Budget and resources allocated for EVT phase
-- ✅ Major technical risks have mitigation plans
-- ✅ Project charter signed off
+- PRD approved by stakeholders
+- Technical feasibility demonstrated (proof-of-concept works)
+- Budget and resources allocated for EVT phase
+- Major technical risks have mitigation plans
+- Project charter signed off
 
 **Gate Review Attendees**: Executive sponsor, Product owner, Engineering leads, PM
 
@@ -147,17 +147,17 @@ Concept → EVT → DVT → PVT → Production Launch
 > Design must be stable before investing in DVT hard tooling
 
 **Critical:**
-- ✅ Core functionality validated - product works as intended
-- ✅ No major electrical or mechanical changes expected
-- ✅ Power and thermal budgets within acceptable range (±20% of target)
-- ✅ BOM cost tracking shows path to target cost
-- ✅ Critical component availability confirmed (no obsolescence risk)
-- ✅ Design ready for manufacturability review (DFM)
+- Core functionality validated - product works as intended
+- No major electrical or mechanical changes expected
+- Power and thermal budgets within acceptable range (±20% of target)
+- BOM cost tracking shows path to target cost
+- Critical component availability confirmed (no obsolescence risk)
+- Design ready for manufacturability review (DFM)
 
 **Optional (may defer to DVT):**
-- ⚠️ Full environmental testing (-10°C to +50°C)
-- ⚠️ Pre-compliance EMI/EMC testing
-- ⚠️ Drop testing and vibration testing
+- Full environmental testing (-10°C to +50°C)
+- Pre-compliance EMI/EMC testing
+- Drop testing and vibration testing
 
 **Gate Review Attendees**: Product owner, Hardware lead, Firmware lead, Supply chain, Manufacturing eng, QA lead, PM
 
@@ -230,13 +230,13 @@ Concept → EVT → DVT → PVT → Production Launch
 > Design must be fully frozen - changes at PVT are extremely costly
 
 **Critical:**
-- ✅ Design 100% frozen - all ECOs (Engineering Change Orders) closed
-- ✅ All reliability testing passed (temp, drop, vibration, lifecycle)
-- ✅ Regulatory compliance testing passed or in-progress with high confidence
-- ✅ Manufacturing yields acceptable (functional >90%, cosmetic plan in place)
-- ✅ Supply chain qualified - all vendors capable of production volumes
-- ✅ Test coverage >95% - all failure modes detectable in manufacturing
-- ✅ No critical open issues - all P0/P1 bugs resolved or have workarounds
+- Design 100% frozen - all ECOs (Engineering Change Orders) closed
+- All reliability testing passed (temp, drop, vibration, lifecycle)
+- Regulatory compliance testing passed or in-progress with high confidence
+- Manufacturing yields acceptable (functional >90%, cosmetic plan in place)
+- Supply chain qualified - all vendors capable of production volumes
+- Test coverage >95% - all failure modes detectable in manufacturing
+- No critical open issues - all P0/P1 bugs resolved or have workarounds
 
 **Gate Review Attendees**: Executive sponsor, Product owner, Hardware lead, Firmware lead, Supply chain, Manufacturing lead, QA lead, Compliance eng, PM
 
@@ -306,17 +306,17 @@ Concept → EVT → DVT → PVT → Production Launch
 > Must demonstrate consistent quality at production speeds
 
 **Critical:**
-- ✅ **Production yield targets met**:
+- **Production yield targets met**:
   - First PVT run: **>70% acceptable** (with root cause analysis)
   - Second PVT run: **>85% required**
   - Pre-launch: **>92% required**
   - Volume production: **>95% functional, >90% cosmetic**
-- ✅ Line speed meets target - no bottlenecks preventing volume shipment
-- ✅ All regulatory certifications obtained and marked on product
-- ✅ Supply chain capable of supporting 3 months of forecasted demand
-- ✅ Quality systems operational - IQC, IPQC, FQC processes running
-- ✅ No P0 (critical) bugs - all showstoppers resolved
-- ✅ Customer support ready - RMA process, spare parts, documentation
+- Line speed meets target - no bottlenecks preventing volume shipment
+- All regulatory certifications obtained and marked on product
+- Supply chain capable of supporting 3 months of forecasted demand
+- Quality systems operational - IQC, IPQC, FQC processes running
+- No P0 (critical) bugs - all showstoppers resolved
+- Customer support ready - RMA process, spare parts, documentation
 
 **Gate Review Attendees**: Executive sponsor, Product owner, Hardware lead, Firmware lead, Supply chain, Manufacturing lead, QA lead, Compliance eng, Sales/Marketing, PM
 
@@ -356,11 +356,11 @@ Concept → EVT → DVT → PVT → Production Launch
 ### Exit Criteria - Production Sustaining
 
 **Critical:**
-- ✅ First 1,000 units shipped to customers
-- ✅ Production yield stable >95% for 2 consecutive weeks
-- ✅ No critical field failures (P0/P1 bugs in production units)
-- ✅ Supply chain delivering to plan (no material shortages)
-- ✅ Customer support handling inquiries (<24hr response time)
+- First 1,000 units shipped to customers
+- Production yield stable >95% for 2 consecutive weeks
+- No critical field failures (P0/P1 bugs in production units)
+- Supply chain delivering to plan (no material shortages)
+- Customer support handling inquiries (<24hr response time)
 
 **Gate Review Attendees**: Executive sponsor, Product owner, Operations lead, Supply chain, QA lead, Sales/Marketing, Customer support, PM
 
@@ -400,11 +400,11 @@ Concept → EVT → DVT → PVT → Production Launch
 
 ### Red Flags to Escalate
 
-- 🚨 **Major functionality not working** at EVT gate
-- 🚨 **Thermal failure** requiring mechanical redesign at DVT
-- 🚨 **Compliance test failure** requiring re-spin at DVT
-- 🚨 **Supply chain single-source risk** with no mitigation at PVT
-- 🚨 **Yield <80%** at PVT gate
+- **Major functionality not working** at EVT gate
+- **Thermal failure** requiring mechanical redesign at DVT
+- **Compliance test failure** requiring re-spin at DVT
+- **Supply chain single-source risk** with no mitigation at PVT
+- **Yield <80%** at PVT gate
 
 ---
 
