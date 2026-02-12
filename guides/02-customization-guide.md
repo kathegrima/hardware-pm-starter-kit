@@ -45,7 +45,7 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 - **Shorter product lifecycle**: 12-24 months typical
 - **Multiple SKUs/variants**: Plan for color options, storage tiers, regional versions
 
-**Risk Profile** [web:134][web:140]:
+**Risk Profile**:
 - **Speed prioritized over perfection**: "Ship and iterate" mindset acceptable
 - **Lower regulatory burden**: CE, FCC, RoHS are primary (no FDA)
 - **Component obsolescence**: High risk due to fast technology evolution
@@ -86,7 +86,7 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 
 > **Characteristics**: Rigorous regulatory requirements, long development cycles, high reliability demands, risk-averse culture
 
-#### Key Differences from Base Templates [web:134][web:137][web:143]
+#### Key Differences from Base Templates
 
 **Timeline Adjustments**:
 - **Much longer phases**: EVT (12-20 weeks), DVT (20-32 weeks), PVT (12-20 weeks)
@@ -136,7 +136,7 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 - **Adverse events**: "Patient injury during testing" - Low probability, Critical impact
 - **Cybersecurity breach**: "Data exposure violates HIPAA" - Medium probability, High impact
 
-**Compliance Requirements** [web:137]:
+**Compliance Requirements**:
 - **Europe/Italy**: MDR (Medical Device Regulation 2017/745), CE marking via Notified Body
 - **United States**: FDA Class I/II/III (510(k), PMA, or De Novo)
 - **Quality System**: ISO 13485 (medical device QMS)
@@ -206,10 +206,10 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 
 > **Characteristics**: Hardware + firmware + software + cloud, interdisciplinary teams, cybersecurity critical, connectivity dependencies
 
-#### Key Differences from Base Templates [web:135][web:138][web:141][web:144]
+#### Key Differences from Base Templates
 
 **Timeline Adjustments**:
-- **Hybrid Agile approach**: Hardware (predictive), firmware/software (agile sprints) [web:135]
+- **Hybrid Agile approach**: Hardware (predictive), firmware/software (agile sprints)
 - **Parallel development**: Hardware, firmware, backend software developed concurrently
 - **Integration challenges**: Add 2-4 weeks per phase for HW/FW/SW integration testing
 - **Over-the-air updates**: Plan for post-launch firmware update strategy
@@ -221,7 +221,7 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 - **Battery life**: Connected devices drain power quickly
 - **Interoperability**: Must work with multiple platforms (iOS, Android, Alexa, Google Home)
 
-**Project Charter Customizations** [web:135]:
+**Project Charter Customizations**:
 
 ```markdown
 ### Success Criteria (IoT Focus)
@@ -233,7 +233,7 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 - [ ] Mobile apps: iOS and Android apps with [X] star rating
 
 ### IoT-Specific Deliverables
-- [ ] Unified backlog (hardware + firmware + software + cloud) [web:135]
+- [ ] Unified backlog (hardware + firmware + software + cloud)
 - [ ] API documentation and versioning strategy
 - [ ] Cybersecurity threat model and penetration testing
 - [ ] Over-the-air (OTA) update mechanism and rollback plan
@@ -250,19 +250,19 @@ This guide helps you **customize the Hardware PM Starter Kit templates** for you
 - Data Scientist (if analytics/ML)
 ```
 
-**Risk Register - IoT Focus** [web:135][web:138]:
+**Risk Register - IoT Focus**:
 - **Cloud service outage**: "AWS region goes down" - Low probability, Critical impact
 - **Cybersecurity breach**: "Device hacked, user data stolen" - Medium probability, Critical impact
 - **Connectivity issues**: "Device can't connect in weak signal areas" - High probability, High impact
 - **Battery drain**: "Firmware bug causes rapid battery drain" - Medium probability, High impact
 - **Integration bugs**: "Hardware ready but firmware delayed" - High probability, Medium impact
 
-**Best Practices** [web:135][web:138]:
-1. **Unified Backlog**: Centralize HW/FW/SW requirements in single backlog for alignment [web:135]
-2. **Daily Standups**: Quick sync across hardware, firmware, software teams [web:135]
-3. **MVP First**: Build minimum viable hardware + firmware + cloud for early validation [web:135]
-4. **Iteration Reviews**: Continuous stakeholder feedback on integrated system [web:135]
-5. **Hybrid Methodology**: Agile for software/firmware, predictive for hardware [web:135]
+**Best Practices**:
+1. **Unified Backlog**: Centralize HW/FW/SW requirements in single backlog for alignment 
+2. **Daily Standups**: Quick sync across hardware, firmware, software teams 
+3. **MVP First**: Build minimum viable hardware + firmware + cloud for early validation
+4. **Iteration Reviews**: Continuous stakeholder feedback on integrated system 
+5. **Hybrid Methodology**: Agile for software/firmware, predictive for hardware
 
 **Compliance Requirements**:
 - **Europe/Italy**: CE marking, RED (Radio Equipment Directive) for wireless
